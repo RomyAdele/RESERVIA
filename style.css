@@ -1,0 +1,255 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	cursor: pointer;
+}
+
+#logo {
+
+	max-width: 100px,
+	height:auto;
+}
+
+header div, header nav {
+
+	display: inline-block;
+}
+
+nav ul { /*navigation */
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li { /*navigation*/
+
+	margin-right: 25px;
+	display: inline-block;
+
+}
+
+nav a { /*navigation*/
+
+text-decoration: none;
+text-align: right;
+color: #0065FC;
+
+}
+
+.navigation { /*nav espacer */
+
+	display: flex;
+	padding: 30px;
+}
+
+input { /*arrondir input*/
+
+	border-radius: 5px;
+	text-align: center;
+}
+
+h3{ /*titre , centrer, remonter*/
+
+	font-size: 10px;
+	padding-bottom:5px;
+	margin-top: 0px;
+
+}
+
+p {
+
+	font-size: 10px;
+
+}
+
+.container { /*encadrer section hebergements, couleur, overflow tout le container,marge */
+	width: 720px;
+	background-color: #F2F2F2;
+	overflow: auto;
+	margin-left: 35px;
+	padding-left: 50px 25px 50px 25px;
+}
+
+.gallery { /* cadre photo, float à gauche*/
+	margin:40px;
+	padding: center;
+	background-color: white;
+	float: left;
+
+
+}
+
+.gallery img { /*raitrecir img,marges interieur ,reajuster img,arrondir img*/
+	width: 150px;
+	height: 75px;
+	object-fit: cover;
+	border-radius: 10% 10% 0% 0%;
+	padding: 5px;
+}
+
+.desc { /*desciption img, aligner text*/
+	padding: 10px;
+	text-align: left;
+
+}
+
+.container2 { /*encadrer populaires, couleur, overflow tout le container,marge */
+	width: 300px;
+	background-color: #F2F2F2;
+	overflow: auto;
+	margin-left: 35px;
+	padding-left: 25px;
+}
+
+.gallery2 { /* cadre photo, float à gauche*/
+	margin:60px;
+	padding: center;
+	border: solid white;
+	background-color: white;
+	float: left;
+
+}
+
+.gallery2 img { /*raitrecir img,marge interieur, reajuster img,arrondir img*/
+	width: 100px;
+	height: 75px;
+	padding: 5px;
+	object-fit: cover;
+	border-radius: 10% 0% 0% 10%;
+}
+
+.desc2 { /*desciption img, aligner text*/
+	padding: 10px;
+	text-align: left;
+
+}
+
+.gallery3, { /* cadre photo, float à gauche*/
+	margin:40px;
+	padding: center;
+	background-color: white;
+	float: left;
+}
+
+.gallery3 img { /*raitrecir img,marges interieur ,reajuster img,arrondir img*/
+	width: 150px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10% 10% 0% 0%;
+	padding: 5px;
+}
+
+.gallery4, { /* cadre photo, float à gauche*/
+	margin:40px;
+	padding: center;
+	background-color: white;
+	float: left;
+}
+
+.gallery4 img { /*raitrecir img,marges interieur ,reajuster img,arrondir img*/
+	width: 150px;
+	height: 90px;
+	object-fit: cover;
+	border-radius: 10% 10% 0% 0%;
+	padding: 5px;
+}
+
+.gallery5, { /* cadre photo, float à gauche*/
+	margin:40px;
+	padding: center;
+	background-color: white;
+	float: left;
+}
+
+.gallery5 img { /*raitrecir img,marges interieur ,reajuster img,arrondir img*/
+	width: 150px;
+	height: 90px;
+	object-fit: cover;
+	border-radius: 10% 10% 0% 0%;
+	padding: 5px;
+}
+
+
+.gallery6, { /* cadre photo, float à gauche*/
+	margin:40px;
+	padding: center;
+	background-color: white;
+	float: left;
+}
+
+.gallery6 img { /*raitrecir img,marges interieur ,reajuster img,arrondir img*/
+	width: 150px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10% 10% 0% 0%;
+	padding: 5px;
+}
+
+
+.gallery7, { /* cadre photo, float à gauche*/
+	margin:40px;
+	padding: center;
+	background-color: white;
+	float: left;
+}
+
+.gallery7 img { /*raitrecir img,marges interieur ,reajuster img,arrondir img*/
+	width: 150px;
+	height: 90px;
+	object-fit: cover;
+	border-radius: 10% 10% 0% 0%;
+	padding: 5px;
+}
+
+.gallery8, { /* cadre photo, float à gauche*/
+	margin:40px;
+	padding: center;
+	background-color: white;
+	float: left;
+}
+
+.gallery8 img { /*raitrecir img,marges interieur ,reajuster img,arrondir img*/
+	width: 150px;
+	height: 90px;
+	object-fit: cover;
+	border-radius: 10% 10% 0% 0%;
+	padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+footer { /*centrer gauche,taiile,couleur*/
+
+	margin-top: 10px;
+	text-align: left;
+	padding: 50px 0;
+	font-size: 8px;
+	background-color: #F2F2F2;
+}
+
+footer ul a { /*couleur, enlever souligner,*/
+
+	color: inherit;
+	text-decoration: none;
+}
+
+footer ul { /*centrer gauche, enlever puce,taille*/
+
+	padding: 0;
+	list-style: none;
+	line-height: 1.6;
+	font-size: 10px;
+}
