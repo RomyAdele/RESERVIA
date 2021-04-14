@@ -1,255 +1,676 @@
 body{
 	font-family: 'Raleway', sans-serif;
 	cursor: pointer;
+	margin: 0px;
+	width: 1440;
+	height: 1884;
 }
 
-#logo {
-
-	max-width: 100px,
-	height:auto;
+main {
+	
+	margin: auto;
+	padding: 70px 70px;
+	height: 100%;
 }
 
-header div, header nav {
+/*----------------------------------------------------------------------*/
 
-	display: inline-block;
-}
+/* HEADER */
 
-nav ul { /*navigation */
-
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-nav li { /*navigation*/
-
-	margin-right: 25px;
-	display: inline-block;
-
-}
-
-nav a { /*navigation*/
-
-text-decoration: none;
-text-align: right;
-color: #0065FC;
-
-}
-
-.navigation { /*nav espacer */
-
+header {
+	
 	display: flex;
-	padding: 30px;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 
-input { /*arrondir input*/
 
-	border-radius: 5px;
-	text-align: center;
+.logo {
+	
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
 }
 
-h3{ /*titre , centrer, remonter*/
+.logo img {
+	
+
+	width: auto;
+	height: 35px;
+}
+
+/*Navigation */
+
+nav ul {
+
+	list-style-type: none;
+	display: flex;
+	
+}
+
+nav li {
+
+	margin-right: 20px;  /*espace entre h,a,s */
+	
+}
+
+nav a {
 
 	font-size: 10px;
-	padding-bottom:5px;
+	text-decoration: none;
+	color: #0065FC;	
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+/* Banner et <p> */
+
+h1 {
+
+	display: inline;
+	margin-top: 35px;
+	margin-bottom: 0px;
+	font-size: 1em;
+	font: bold;
+	
+}
+
+span {
+
+	font-size: x-small;
+
+}
+
+.section-titre{
+
+	display: block;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+
+/*-----------------------------------------------------------*/
+
+
+
+
+/* search-container button input */
+
+form {
+
+	display: flex; /* colle les 3 ensemble*/
+	align-items: center;
+
+}
+
+.button .fas  { /*icon */
+
+	width: auto;
+	border-radius: 30px;
+	
+	background: #F2F2F2;
+	color: red;
+	font-size: 10px;
+
+	border : 1px solid #F2F2F2;
+	justify-content: center;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------SECTION-TWO , Filtre + Input Econ, Fam, Rom, Animaux + Icons---------*/ 
+
+
+.filter-icon .fas {
+
+	font-size: xx-small;
+	color: #0065FC;
+	background-color: purple;
+	border-radius: 
+}
+
+.filter {
+
+	position:relative;
+	display:flex;
+	align-items:center;
+	margin:auto ;
+}
+
+
+
+
+
+
+
+
+
+/*------ icon "i" et <p> Plus de 500 -------*/
+
+
+#info p { 
+	
+
+	margin-top: 40px;
+	font-size: 10px;
+	margin-bottom: 25px;
+	display:inline-block;
+
+}
+
+
+#info {
+
+
+	margin-top: 10px;
+	font-size: 10px;
+
+}
+
+
+/*---------------------------------------------------*/
+
+
+/* SECTION Hébergement + Populaires */
+
+
+/* SECTION */
+
+
+section {
+
+	display: flex;
+	justify-content: space-between;
+	
+	
+
+	margin-bottom: 20px;
+	width: auto;
+}
+
+.hébergement, .populaires {
+
+
+	text-align: justify;
+	flex:wrap;
+
+}
+
+/* Hébergements */
+
+.hébergements { /* ici 	display: inline-block; */
+
+	
+	justify-content: space-between;
+	flex:wrap;
+
+	margin-right: 20px;
+	flex: 3;
+	padding: 10px;
+	
+
+	background-color: #F2F2F2;
+	border-radius: 20px 20px 20px 20px ;  /* bordure arrondi item droit*/
+
+}
+
+.hébergements img {
+
+	min-width: 190px; /*taille img largeur */
+	max-height: 80px; /*taille img hauteur */
+
+	object-fit: cover; /* ajuster img*/
+	
+	border-radius: 10px 10px 0px 0px;
+	border: 3;
+
+	flex-flow: row;
+	align-items: left;
+
+	display: flex;
+	position: relative;
+
+
+}
+
+figure { /* ici 	display: inline-block; */
+
+	display:inline-block;
+	text-align: left; /*text à gauche */
+
+	margin:1;
+	padding : 3px ;
+	
+	
+	background-color: white; /*couleur de fond blanc */
+	border-radius: 10px 10px 10px 10px; /* arrondir bordures */
+	box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+}
+
+
+.hébergements h2 {
+
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 20px;
+}
+
+/* Les plus populaires */
+
+
+.populaires { /* ici 	display: inline-block; */
+
+
+	display: block; /* afficher même ligne */
+	flex: 1;
+	flex-wrap: wrap;
+
+	padding: 10px; /* bouge le titre h2 */
+
+
+	font-size: 0.9em;
+	background-color: #F2F2F2;
+	border-radius: 25px 25px 25px 25px ; 
+
+}
+
+.populaires img { /* good */
+
+	width: 80px; /*taille img largeur */
+	height: 80px; /*taille img hauteur */
+
+	object-fit: cover; /* ajuster img*/
+	border-radius: 10px 0px 0px 10px;
+
+	flex: 2;
+}	
+
+
+.populaires p {
+
+	text-align: left;
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+}
+
+
+.figure2 {  /* encadre photo */
+
+	display: block; /* afficher même ligne */ 
+	text-align: left; /*text à gauche */
+	vertical-align: top;
+
+	margin:20px; /*marge entre les background */
+	margin-left: 10px;
+	margin-bottom: 20px;
+	
+	padding:3px ; /* marge interieur bas entre photo et bordure blanche */
+	
+	text-decoration: none; /*ci mit en <a> */
+	background-color: white; /*couleur de fond blanc */
+	border-radius: 10px 10px 10px 10px; /* arrondir bordures */
+	box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+	
+}
+
+.paragraph-right {
+
+	display: inline; /* afficher même ligne */
+	margin: 0 0px 0px 5px;
+	padding-top: 10px;
+
+}
+
+.populaires h2 {
+
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 20px;
+}
+
+
+
+/* Icons */
+
+.far {
+
+	font-size: xx-small;
+	color:rgb(170, 170, 170)
+	
+}
+
+
+.fa-star {
+
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ACTIVITES--------------------*/
+
+#section-activités {/*Block*/
+    
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+   
+	margin-top: 20px 0 60px 50px ;
+    padding: 10px; /* bouge le titre h2 */
+
+	
+	background-color:white;
+	border-radius: 25px 25px 25px 25px ; 
+
+}
+
+#section-activités h2 {/* Titre Activités */
+    
+   	width:100%;
+    margin-left: 10px;
+	font-size: 13px;
+
+}
+
+.section-activités h3{
+
+	font-size: 8px;
+	padding-bottom:15px;
 	margin-top: 0px;
 
 }
 
-p {
+/*-------------------------------------*/
 
-	font-size: 10px;
 
-}
-
-.container { /*encadrer section hebergements, couleur, overflow tout le container,marge */
-	width: 720px;
-	background-color: #F2F2F2;
-	overflow: auto;
-	margin-left: 35px;
-	padding-left: 50px 25px 50px 25px;
-}
-
-.gallery { /* cadre photo, float à gauche*/
-	margin:40px;
-	padding: center;
-	background-color: white;
-	float: left;
-
+#container1 , #container2 {/*Disposition img*/
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-around;
+    max-width: 665px;
 
 }
 
-.gallery img { /*raitrecir img,marges interieur ,reajuster img,arrondir img*/
-	width: 150px;
-	height: 75px;
-	object-fit: cover;
-	border-radius: 10% 10% 0% 0%;
-	padding: 5px;
-}
 
-.desc { /*desciption img, aligner text*/
-	padding: 10px;
-	text-align: left;
+.colonne {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-}
-
-.container2 { /*encadrer populaires, couleur, overflow tout le container,marge */
-	width: 300px;
-	background-color: #F2F2F2;
-	overflow: auto;
-	margin-left: 35px;
-	padding-left: 25px;
-}
-
-.gallery2 { /* cadre photo, float à gauche*/
-	margin:60px;
-	padding: center;
-	border: solid white;
-	background-color: white;
-	float: left;
-
-}
-
-.gallery2 img { /*raitrecir img,marge interieur, reajuster img,arrondir img*/
-	width: 100px;
-	height: 75px;
-	padding: 5px;
-	object-fit: cover;
-	border-radius: 10% 0% 0% 10%;
-}
-
-.desc2 { /*desciption img, aligner text*/
-	padding: 10px;
-	text-align: left;
-
-}
-
-.gallery3, { /* cadre photo, float à gauche*/
-	margin:40px;
-	padding: center;
-	background-color: white;
-	float: left;
-}
-
-.gallery3 img { /*raitrecir img,marges interieur ,reajuster img,arrondir img*/
-	width: 150px;
-	height: 200px;
-	object-fit: cover;
-	border-radius: 10% 10% 0% 0%;
-	padding: 5px;
-}
-
-.gallery4, { /* cadre photo, float à gauche*/
-	margin:40px;
-	padding: center;
-	background-color: white;
-	float: left;
-}
-
-.gallery4 img { /*raitrecir img,marges interieur ,reajuster img,arrondir img*/
-	width: 150px;
-	height: 90px;
-	object-fit: cover;
-	border-radius: 10% 10% 0% 0%;
-	padding: 5px;
-}
-
-.gallery5, { /* cadre photo, float à gauche*/
-	margin:40px;
-	padding: center;
-	background-color: white;
-	float: left;
-}
-
-.gallery5 img { /*raitrecir img,marges interieur ,reajuster img,arrondir img*/
-	width: 150px;
-	height: 90px;
-	object-fit: cover;
-	border-radius: 10% 10% 0% 0%;
-	padding: 5px;
-}
-
-
-.gallery6, { /* cadre photo, float à gauche*/
-	margin:40px;
-	padding: center;
-	background-color: white;
-	float: left;
-}
-
-.gallery6 img { /*raitrecir img,marges interieur ,reajuster img,arrondir img*/
-	width: 150px;
-	height: 200px;
-	object-fit: cover;
-	border-radius: 10% 10% 0% 0%;
-	padding: 5px;
-}
-
-
-.gallery7, { /* cadre photo, float à gauche*/
-	margin:40px;
-	padding: center;
-	background-color: white;
-	float: left;
-}
-
-.gallery7 img { /*raitrecir img,marges interieur ,reajuster img,arrondir img*/
-	width: 150px;
-	height: 90px;
-	object-fit: cover;
-	border-radius: 10% 10% 0% 0%;
-	padding: 5px;
-}
-
-.gallery8, { /* cadre photo, float à gauche*/
-	margin:40px;
-	padding: center;
-	background-color: white;
-	float: left;
-}
-
-.gallery8 img { /*raitrecir img,marges interieur ,reajuster img,arrondir img*/
-	width: 150px;
-	height: 90px;
-	object-fit: cover;
-	border-radius: 10% 10% 0% 0%;
-	padding: 5px;
 }
 
 
 
 
+#container2  .colonne  .small  a  div  img {/*Position img Notre Dame */
+   
+    object-position: top;
+
+}
 
 
+/*-------------------Small------------------*/
 
 
+.small  a  div  h3 {/* Img  îles du Frioul, Notre Dame  */
+    
+    margin-top: 10px;
+    margin-left: 20px;
+    color:black;
+
+}
 
 
+.small  a {
+    
+    text-decoration: none;
+
+}
 
 
+.small  a  div  {/* img small, si je mets img je n'aurais pas de border radius*/
+   
+    width: 300px;
+    height: 165px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
 
 
 }
 
-footer { /*centrer gauche,taiile,couleur*/
+
+.small  a  div  img {
+   
+    object-fit: cover;
+    width: 300px;
+    height: 110px;
+    border-radius: 20px 20px 0 0;
+    
+
+}
+
+/*------------------Moyenne------------------*/
+
+
+.moyenne  a  div  h3 { /* H3 : Img Fort Pomègues, Parc Longchamp */
+    
+    margin-top: 20px; /* marge ext haut titre */
+    margin-left: 10px; /* marge ext gauche titre */
+    color:black;
+
+ }
+
+
+.moyenne  a { /* Img Fort Pomègues, Parc Longchamp */
+    
+    text-decoration: none;
+
+}
+
+
+
+
+.moyenne  a  div {/* Img Fort Pomègues, Parc Longchamp */
+   
+    width: 300px; /* Agrandir largeur border white */
+    height: 235px; /* Agrandir haueur border white */
+    border-radius: 20px 20px 20px 20px; /* bords arrondis */
+    box-shadow: 0px 0px 10px 0px rgb(170, 170, 170); /* ombre de la boite */
+  
+}
+
+
+.moyenne  a  div  img { /* Img Fort Pomègues, Parc Longchamp */
+   
+    object-fit: cover;
+    width: 300px; /* + le px est haut plus l'image sortira de la bordure blanche*/
+    height: 170px; /* + le px est haut + le h3 et la bordure descend */
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+
+
+
+/*---------------------Big----------------*/
+
+.big  a  div  h3 {  /* Img  Vieux port, Calanques */
+    
+    margin-top: 10px;
+    margin-left: 20px;
+    color:black;
+
+}
+
+
+.big  a {
+
+    text-decoration: none;
+
+}
+
+
+.big  a  div  img {/* Img  Vieux port, Calanques */
+   
+    object-fit: cover;
+    width: 300px; /* + le px est haut plus l'image sortira de la bordure blanche*/
+    height: 370px; /* hauteur img */
+    border-radius: 20px 20px 0 0;
+   
+}
+
+ 
+.big a  div { /* Img  Vieux port, Calanques */
+    
+    width: 300px; /* Agrandir largeur border white */
+    height: 445px; /* Agrandir hauteur border white */
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+   
+}
+
+
+/*-----------------------------FOOTER-------------------------*/
+
+.footer { /*centrer gauche,taiile,couleur*/ /* separer propriete     */
+
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
 
 	margin-top: 10px;
-	text-align: left;
-	padding: 50px 0;
-	font-size: 8px;
+	padding: 20px ;
+	
+	font-size: 8px; /* attrait au text */
 	background-color: #F2F2F2;
+	
+
 }
 
-footer ul a { /*couleur, enlever souligner,*/
+footer li a { /*couleur, enlever soulignement,*/
 
-	color: inherit;
 	text-decoration: none;
+	color: black;
 }
 
 footer ul { /*centrer gauche, enlever puce,taille*/
 
-	padding: 0;
+
+	display:flex;
+	flex-direction: column;
+
+
+	padding: 0px;
+	margin-right: 60px;
+
+
 	list-style: none;
-	line-height: 1.6;
+	line-height: 2;
 	font-size: 10px;
 }
+
+
+
+footer.div {
+
+	display: flex;
+	justify-content: space-around;
+	width: 35px;
+
+}
+
+footer h3 {
+
+	
+	font-weight: bolder;
+
+	margin-top: 0px;
+	padding-bottom: 10px;
+
+	color: seagreen;
+	font-size: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*---------------------------------- H2 , P1, H3 ---------------------*/
+
+h3 {
+
+	font-size: 10px;
+	font-weight: bolder;
+}
+
+/*Tous les paragraphes*/
+
+p {
+
+	font-size: 8px;
+
+}
+
