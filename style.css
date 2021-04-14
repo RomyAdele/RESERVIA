@@ -151,7 +151,7 @@ form {
 	font-size: xx-small;
 	color: #0065FC;
 	background-color: purple;
-	border-radius: 
+
 }
 
 .filter {
@@ -324,7 +324,7 @@ figure { /* ici 	display: inline-block; */
 
 	display: block; /* afficher même ligne */ 
 	text-align: left; /*text à gauche */
-	vertical-align: top;
+
 
 	margin:20px; /*marge entre les background */
 	margin-left: 10px;
