@@ -4,6 +4,7 @@ body{
 	margin: 0px;
 	width: 1440;
 	height: 1884;
+
 }
 
 main {
@@ -13,9 +14,7 @@ main {
 	height: 100%;
 }
 
-/*----------------------------------------------------------------------*/
-
-/* HEADER */
+/* ----- HEADER ----- */
 
 header {
 	
@@ -29,11 +28,10 @@ header {
 	
 	display: flex;
 	flex-direction: row;
-	align-items: baseline;
+
 }
 
 .logo img {
-	
 
 	width: auto;
 	height: 35px;
@@ -50,171 +48,188 @@ nav ul {
 
 nav li {
 
-	margin-right: 20px;  /*espace entre h,a,s */
+	margin-right: 30px;  /*espace entre h,a,s */
 	
 }
 
 nav a {
 
-	font-size: 10px;
+	font-size: 0.6rem;
 	text-decoration: none;
 	color: #0065FC;	
 }
 
 
-/*------------------------------------------------------------------------------*/
-
-/* Banner et <p> */
-
-h1 {
-
-	display: inline;
-	margin-top: 35px;
-	margin-bottom: 0px;
-	font-size: 1em;
-	font: bold;
-	
-}
-
-span {
-
-	font-size: x-small;
-
-}
+/* ----- section-1 -----*/
 
 .section-titre{
 
 	display: block;
+
 	margin-top: 25px;
 	margin-bottom: 15px;
 }
 
 
-/*-----------------------------------------------------------*/
+h1 {
 
+	display: inline;
+	margin-top: 35px;
+	
+	font-size: 1rem;
+	font: bold;
+	
+}
 
+.section-1 p {
 
+	font-size: 0.6rem;
+	margin-bottom: 5px;
 
-/* search-container button input */
+}
+
+/* search-1 class= search-container */
 
 form {
 
-	display: flex; /* colle les 3 ensemble*/
+	display: flex; /* colle les 3 ensembles*/
 	align-items: center;
-
 }
 
-.button .fas  { /*icon */
+.button .fas { /*icon */
 
-	width: auto;
-	border-radius: 30px;
-	
-	background: #F2F2F2;
-	color: red;
-	font-size: 10px;
-
-	border : 1px solid #F2F2F2;
 	justify-content: center;
-	
+	padding: 10px;
+
+	background:none;
+	font-size: 0.9rem;
+	color: black;
+
 }
 
+ .button { /* voir avec dorian car mag*/
 
+	padding:auto;
+	margin-right: 2px;
 
+	border: none;
+	border-radius: 15px 0 0 15px;
 
+	background-color:#F2F2F2;
 
+}
 
+.input1 {
 
+	text-align: center;
 
+	margin-left: 15px;
+	margin-right: 20px;
+	padding: 10px;
 
+	border:none;
 
+}
 
+.rechercher {
 
+	padding: 10px;
 
+	border-radius: 0px 15px 15px 0;
+	border: none;
 
+	background-color: #0065fc;
+	color: seashell;
 
+}
 
+/* ----- Section-2 ----- */ 
 
+.input-icon { 
 
+	display: flex;
 
-
-
-
-
-
-
-
-/*-----------------------SECTION-TWO , Filtre + Input Econ, Fam, Rom, Animaux + Icons---------*/ 
-
-
-.filter-icon .fas {
-
-	font-size: xx-small;
-	color: #0065FC;
-	background-color: purple;
+	align-items: center;
+	position: relative;
+	
+	background-color: blue;
+	margin: 20px 0 0px 0px;
 
 }
 
 .filter {
 
-	position:relative;
-	display:flex;
-	align-items:center;
-	margin:auto ;
+	display: flex;   
+	align-items: center;
+
+	margin-right: 35px; /* decale les filtres entre eux de 40px */
+	padding-bottom: -20px; /* voir avec Dorian */
+
+	border: 2px solid greenyellow; /* bordure des filtres */
+	border-radius: 30px;
+	
 }
 
+.filter span {  
 
+	display: flex;
 
+	padding: 5px 10px;
+	margin-left: 25px ;
 
+	text-align: center;
+	justify-content: center;
 
+	color: red;
+	font-size: 0.8rem;
+}	
 
+.icon {
 
+	color: slateblue;
+	background-color: teal;
 
+}
 
-/*------ icon "i" et <p> Plus de 500 -------*/
+/* id=info */
 
-
-#info p { 
+#info span { 
 	
-
-	margin-top: 40px;
-	font-size: 10px;
-	margin-bottom: 25px;
 	display:inline-block;
 
-}
+	margin-top: 10px;
+	margin-bottom: 10px;
 
+	font-size: 0.6rem;
+}
 
 #info {
 
-
-	margin-top: 10px;
-	font-size: 10px;
-
+	display: flex;
 }
 
+.fa-info {
 
-/*---------------------------------------------------*/
+	margin-right: 15px;
+	margin-left: 5px;
 
+	border: 50px;
+	color: #0065FC;
+	
+}
 
-/* SECTION Hébergement + Populaires */
+/* ----- Section-3 Hébergements + Populaires ----- */
 
-
-/* SECTION */
-
-
-section {
+.section-3 {
 
 	display: flex;
 	justify-content: space-between;
 	
-	
-
 	margin-bottom: 20px;
 	width: auto;
 }
 
-.hébergement, .populaires {
-
+.hébergement .populaires {
 
 	text-align: justify;
 	flex:wrap;
@@ -225,14 +240,12 @@ section {
 
 .hébergements { /* ici 	display: inline-block; */
 
-	
 	justify-content: space-between;
-	flex:wrap;
+	flex-flow:row wrap;
 
 	margin-right: 20px;
-	flex: 3;
 	padding: 10px;
-	
+	flex: 3;
 
 	background-color: #F2F2F2;
 	border-radius: 20px 20px 20px 20px ;  /* bordure arrondi item droit*/
@@ -255,17 +268,15 @@ section {
 	display: flex;
 	position: relative;
 
-
 }
 
-figure { /* ici 	display: inline-block; */
+figure { 
 
 	display:inline-block;
 	text-align: left; /*text à gauche */
 
 	margin:1;
 	padding : 3px ;
-	
 	
 	background-color: white; /*couleur de fond blanc */
 	border-radius: 10px 10px 10px 10px; /* arrondir bordures */
@@ -275,25 +286,26 @@ figure { /* ici 	display: inline-block; */
 
 .hébergements h2 {
 
-	font-size: 13px;
-	font-weight: bold;
-	padding-left: 20px;
+	padding-left: 30px;
+
+	font-size: 1rem;
+}
+
+.hébergements p {
+
+	font-size: 0.7rem;
 }
 
 /* Les plus populaires */
 
-
-.populaires { /* ici 	display: inline-block; */
-
+.populaires { 
 
 	display: block; /* afficher même ligne */
-	flex: 1;
 	flex-wrap: wrap;
 
+	flex: 1;
 	padding: 10px; /* bouge le titre h2 */
 
-
-	font-size: 0.9em;
 	background-color: #F2F2F2;
 	border-radius: 25px 25px 25px 25px ; 
 
@@ -307,87 +319,59 @@ figure { /* ici 	display: inline-block; */
 	object-fit: cover; /* ajuster img*/
 	border-radius: 10px 0px 0px 10px;
 
-	flex: 2;
+	flex: 1;
+	vertical-align: middle;
+	float: left;
 }	
 
 
 .populaires p {
 
-	text-align: left;
 	padding-top: 0px;
 	padding-bottom: 0px;
 
+	text-align: left;
+	
+	font-size: 0.6rem;
+
 }
 
-
-.figure2 {  /* encadre photo */
+.figure2 {  /* encadre photos voir avec Dorian un peu bazar */
 
 	display: block; /* afficher même ligne */ 
 	text-align: left; /*text à gauche */
 
-
 	margin:20px; /*marge entre les background */
 	margin-left: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	
-	padding:3px ; /* marge interieur bas entre photo et bordure blanche */
-	
-	text-decoration: none; /*ci mit en <a> */
-	background-color: white; /*couleur de fond blanc */
-	border-radius: 10px 10px 10px 10px; /* arrondir bordures */
+	padding:5px ; /* marge interieur bas entre photo et bordure blanche */
+	padding-left: 2px;
+	padding-bottom: 12px;
+
+	text-decoration: none; 
+	background-color: white; 
+	border-radius: 10px 10px 10px 10px; 
 	box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
-	
-}
-
-.paragraph-right {
-
-	display: inline; /* afficher même ligne */
-	margin: 0 0px 0px 5px;
-	padding-top: 10px;
-
 }
 
 .populaires h2 {
 
-	font-size: 13px;
-	font-weight: bold;
 	padding-left: 20px;
+	font-size: 1rem;
+
 }
-
-
-
-/* Icons */
-
-.far {
-
-	font-size: xx-small;
-	color:rgb(170, 170, 170)
-	
-}
-
 
 .fa-star {
 
-	color: red;
+	color: #0065fc;;
+	font-size: 0.5rem;
+
 }
 
+/* ----- Section activités ----- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------------ACTIVITES--------------------*/
-
-#section-activités {/*Block*/
+#section-activités {
     
     display: flex;
     flex-wrap:wrap;
@@ -396,7 +380,6 @@ figure { /* ici 	display: inline-block; */
 	margin-top: 20px 0 60px 50px ;
     padding: 10px; /* bouge le titre h2 */
 
-	
 	background-color:white;
 	border-radius: 25px 25px 25px 25px ; 
 
@@ -404,68 +387,54 @@ figure { /* ici 	display: inline-block; */
 
 #section-activités h2 {/* Titre Activités */
     
-   	width:100%;
+	width: 100%; /* voir avec D si je retire % tout est décalé */
     margin-left: 10px;
-	font-size: 13px;
+
+	font-size: 1rem;
 
 }
 
 .section-activités h3{
 
-	font-size: 8px;
 	padding-bottom:15px;
 	margin-top: 0px;
-
 }
 
-/*-------------------------------------*/
-
-
-#container1 , #container2 {/*Disposition img*/
+#container1 , #container2 { /*Disposition img*/
    
     display: flex;
     flex-wrap: wrap;
+	justify-content: space-around;
+
     flex: 1;
-    justify-content: space-around;
+
     max-width: 665px;
-
 }
-
 
 .colonne {
  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
-
-
-
-#container2  .colonne  .small  a  div  img {/*Position img Notre Dame */
+#container2  .colonne  .small  a  div  img { /*Position img Notre Dame */
    
     object-position: top;
-
 }
 
-
-/*-------------------Small------------------*/
-
+/* Small */
 
 .small  a  div  h3 {/* Img  îles du Frioul, Notre Dame  */
     
     margin-top: 10px;
     margin-left: 20px;
     color:black;
-
 }
-
 
 .small  a {
     
     text-decoration: none;
-
 }
 
 
@@ -473,121 +442,100 @@ figure { /* ici 	display: inline-block; */
    
     width: 300px;
     height: 165px;
+
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
-
-
 }
-
 
 .small  a  div  img {
    
-    object-fit: cover;
-    width: 300px;
+	width: 300px;
     height: 110px;
-    border-radius: 20px 20px 0 0;
-    
 
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
 }
 
-/*------------------Moyenne------------------*/
-
+/* Moyenne */
 
 .moyenne  a  div  h3 { /* H3 : Img Fort Pomègues, Parc Longchamp */
     
     margin-top: 20px; /* marge ext haut titre */
     margin-left: 10px; /* marge ext gauche titre */
-    color:black;
 
+	color: black;
  }
-
 
 .moyenne  a { /* Img Fort Pomègues, Parc Longchamp */
     
     text-decoration: none;
-
 }
-
-
-
 
 .moyenne  a  div {/* Img Fort Pomègues, Parc Longchamp */
    
-    width: 300px; /* Agrandir largeur border white */
-    height: 235px; /* Agrandir haueur border white */
-    border-radius: 20px 20px 20px 20px; /* bords arrondis */
-    box-shadow: 0px 0px 10px 0px rgb(170, 170, 170); /* ombre de la boite */
-  
-}
+    width: 300px;
+    height: 235px; 
 
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 10px 0px rgb(170, 170, 170);  
+}
 
 .moyenne  a  div  img { /* Img Fort Pomègues, Parc Longchamp */
-   
-    object-fit: cover;
+
     width: 300px; /* + le px est haut plus l'image sortira de la bordure blanche*/
     height: 170px; /* + le px est haut + le h3 et la bordure descend */
-    border-radius: 20px 20px 0px 0px;
-
+  
+	object-fit: cover;
+	border-radius: 20px 20px 0px 0px;
 }
 
 
-
-
-/*---------------------Big----------------*/
+/* Big */
 
 .big  a  div  h3 {  /* Img  Vieux port, Calanques */
     
     margin-top: 10px;
     margin-left: 20px;
-    color:black;
 
+	color: black;
 }
-
 
 .big  a {
 
     text-decoration: none;
-
 }
-
 
 .big  a  div  img {/* Img  Vieux port, Calanques */
    
-    object-fit: cover;
     width: 300px; /* + le px est haut plus l'image sortira de la bordure blanche*/
     height: 370px; /* hauteur img */
-    border-radius: 20px 20px 0 0;
-   
+
+	object-fit: cover;
+    border-radius: 20px 20px 0 0;  
 }
 
- 
 .big a  div { /* Img  Vieux port, Calanques */
     
-    width: 300px; /* Agrandir largeur border white */
-    height: 445px; /* Agrandir hauteur border white */
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+    width: 300px; 
+    height: 445px; 
    
+	border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
 }
 
 
-/*-----------------------------FOOTER-------------------------*/
+/* ----- FOOTER ----- */
 
 .footer { /*centrer gauche,taiile,couleur*/ /* separer propriete     */
-
 
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 
-
 	margin-top: 10px;
 	padding: 20px ;
 	
-	font-size: 8px; /* attrait au text */
 	background-color: #F2F2F2;
-	
-
 }
 
 footer li a { /*couleur, enlever soulignement,*/
@@ -598,79 +546,39 @@ footer li a { /*couleur, enlever soulignement,*/
 
 footer ul { /*centrer gauche, enlever puce,taille*/
 
-
 	display:flex;
 	flex-direction: column;
 
-
 	padding: 0px;
 	margin-right: 60px;
-
 
 	list-style: none;
 	line-height: 2;
 	font-size: 10px;
 }
 
-
-
 footer.div {
 
 	display: flex;
 	justify-content: space-around;
-	width: 35px;
 
+	width: 35px;
 }
 
 footer h3 {
 
-	
 	font-weight: bolder;
 
 	margin-top: 0px;
 	padding-bottom: 10px;
 
-	color: seagreen;
-	font-size: 10px;
-
-
+	color:black;
 }
 
+ /* ---------- H2 , P1, H3 ---------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /*---------------------------------- H2 , P1, H3 ---------------------*/
-
-h3 {
+ h3 {
 
 	font-size: 10px;
 	font-weight: bolder;
 }
-
-/*Tous les paragraphes*/
-
-p {
-
-	font-size: 8px;
-
-}
-
