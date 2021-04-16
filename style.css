@@ -1,10 +1,8 @@
 body{
 	font-family: 'Raleway', sans-serif;
 	cursor: pointer;
-	margin: 0px;
-	width: 1440;
-	height: 1884;
-
+	margin: auto;
+	max-width: 1440px;
 }
 
 main {
@@ -22,7 +20,6 @@ header {
 	justify-content: space-between;
 	align-items: flex-end;
 }
-
 
 .logo {
 	
@@ -58,7 +55,6 @@ nav a {
 	text-decoration: none;
 	color: #0065FC;	
 }
-
 
 /* ----- section-1 -----*/
 
@@ -109,7 +105,6 @@ form {
 
  .button { /* voir avec dorian car mag*/
 
-	padding:auto;
 	margin-right: 2px;
 
 	border: none;
@@ -145,49 +140,75 @@ form {
 
 /* ----- Section-2 ----- */ 
 
-.input-icon { 
+.filter ul {
 
 	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
 
-	align-items: center;
-	position: relative;
-	
-	background-color: blue;
-	margin: 20px 0 0px 0px;
+	align-items:center;
+	padding-left: 5px;
 
 }
 
-.filter {
+.filtreleft span {
 
-	display: flex;   
+	color: black;
+	font-weight: bold;
+	font-size: 0.8rem;
+}
+
+.filter ul li {
+
+	display: flex;
+	margin-right: 15px;
+
+}
+
+.filtre-icon {
+
+	display: flex;
 	align-items: center;
 
-	margin-right: 35px; /* decale les filtres entre eux de 40px */
-	padding-bottom: -20px; /* voir avec Dorian */
+	padding-right: 10px;
+	padding-bottom: 15px;
+	margin-left: 20px;
 
-	border: 2px solid greenyellow; /* bordure des filtres */
+	border: 2px solid  #DEEBFF;
 	border-radius: 30px;
 	
 }
 
-.filter span {  
+.filtre-icon span {
 
-	display: flex;
+	padding-right: 10px;
+	margin-right: 10px;
+	margin-left: 45px;
 
-	padding: 5px 10px;
-	margin-left: 25px ;
-
-	text-align: center;
 	justify-content: center;
+	align-items: center;
 
-	color: red;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
 	font-size: 0.8rem;
-}	
 
-.icon {
+}
 
-	color: slateblue;
-	background-color: teal;
+.filter i {
+
+	position: absolute;
+	display: flex;
+	
+	background-color: #DEEBFF;
+	border-radius: 30px;
+	color:  #0065FC;
+	
+	justify-content: center;
+	align-items: center;
+	
+	width: 35px;
+	height: 35px;
 
 }
 
@@ -232,7 +253,6 @@ form {
 .hébergement .populaires {
 
 	text-align: justify;
-	flex:wrap;
 
 }
 
@@ -254,20 +274,15 @@ form {
 
 .hébergements img {
 
+	display: flex;
+	position: relative;
+	flex-flow: row;
+	
 	min-width: 190px; /*taille img largeur */
 	max-height: 80px; /*taille img hauteur */
 
 	object-fit: cover; /* ajuster img*/
-	
 	border-radius: 10px 10px 0px 0px;
-	border: 3;
-
-	flex-flow: row;
-	align-items: left;
-
-	display: flex;
-	position: relative;
-
 }
 
 figure { 
@@ -275,7 +290,7 @@ figure {
 	display:inline-block;
 	text-align: left; /*text à gauche */
 
-	margin:1;
+	margin: 20px;
 	padding : 3px ;
 	
 	background-color: white; /*couleur de fond blanc */
@@ -283,11 +298,9 @@ figure {
 	box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
 }
 
-
 .hébergements h2 {
 
 	padding-left: 30px;
-
 	font-size: 1rem;
 }
 
@@ -305,6 +318,7 @@ figure {
 
 	flex: 1;
 	padding: 10px; /* bouge le titre h2 */
+	padding-bottom: 20px;
 
 	background-color: #F2F2F2;
 	border-radius: 25px 25px 25px 25px ; 
@@ -341,11 +355,9 @@ figure {
 	display: block; /* afficher même ligne */ 
 	text-align: left; /*text à gauche */
 
-	margin:20px; /*marge entre les background */
-	margin-left: 10px;
-	margin-bottom: 30px;
+	margin:15px; /*marge entre les background */
 	
-	padding:5px ; /* marge interieur bas entre photo et bordure blanche */
+	padding:2px ; /* marge interieur bas entre photos et bordure blanche */
 	padding-left: 2px;
 	padding-bottom: 12px;
 
@@ -359,16 +371,18 @@ figure {
 
 	padding-left: 20px;
 	font-size: 1rem;
-
 }
 
 .fa-star {
 
 	color: #0065fc;;
 	font-size: 0.5rem;
-
 }
 
+.far {
+
+	color:whitesmoke;
+}
 /* ----- Section activités ----- */
 
 #section-activités {
@@ -377,7 +391,7 @@ figure {
     flex-wrap:wrap;
     justify-content: space-between;
    
-	margin-top: 20px 0 60px 50px ;
+	margin-top: 20px 0px 60px 50px ;
     padding: 10px; /* bouge le titre h2 */
 
 	background-color:white;
@@ -498,6 +512,7 @@ figure {
     margin-left: 20px;
 
 	color: black;
+	font-weight: bold;
 }
 
 .big  a {
@@ -567,12 +582,12 @@ footer.div {
 
 footer h3 {
 
-	font-weight: bolder;
-
 	margin-top: 0px;
 	padding-bottom: 10px;
 
-	color:black;
+	color: black;
+	font-size: 0.7rem;
+	font-weight: bold;
 }
 
  /* ---------- H2 , P1, H3 ---------- */
