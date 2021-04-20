@@ -1,16 +1,17 @@
 body{
+	
 	font-family: 'Raleway', sans-serif;
-	cursor: pointer;
-	margin: auto;
-	max-width: 1440px;
+	
 }
 
 main {
 	
 	margin: auto;
+	max-width: 1440px;
 	padding: 70px 70px;
-	height: 100%;
+	width: 100%
 }
+
 
 /* ----- HEADER ----- */
 
@@ -26,12 +27,15 @@ header {
 	display: flex;
 	flex-direction: row;
 
+	border:1px solid pink;	
+
 }
 
 .logo img {
 
 	width: auto;
 	height: 35px;
+
 }
 
 /*Navigation */
@@ -40,18 +44,20 @@ nav ul {
 
 	list-style-type: none;
 	display: flex;
+
+	border:1px solid black;
 	
 }
 
 nav li {
 
 	margin-right: 30px;  /*espace entre h,a,s */
+	border:1px solid pink;
 	
 }
 
 nav a {
-
-	font-size: 0.6rem;
+	
 	text-decoration: none;
 	color: #0065FC;	
 }
@@ -60,27 +66,32 @@ nav a {
 
 .section-titre{
 
-	display: block;
-
+	display: flex;
+	flex-direction: column;
+	
 	margin-top: 25px;
 	margin-bottom: 15px;
+
+	border:1px solid blue;
 }
 
 
 h1 {
 
-	display: inline;
-	margin-top: 35px;
-	
-	font-size: 1rem;
-	font: bold;
+	margin-top: auto;
+	border:1px solid green;
 	
 }
 
 .section-1 p {
 
-	font-size: 0.6rem;
+	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 5px;
+
+	margin-top: auto;
+
+	border:1px solid orange;
 
 }
 
@@ -90,15 +101,18 @@ form {
 
 	display: flex; /* colle les 3 ensembles*/
 	align-items: center;
+
+	border:2px solid green;
+
 }
 
 .button .fas { /*icon */
 
 	justify-content: center;
+
 	padding: 10px;
 
 	background:none;
-	font-size: 0.9rem;
 	color: black;
 
 }
@@ -140,117 +154,156 @@ form {
 
 /* ----- Section-2 ----- */ 
 
+.filter {
+
+	display: flex;
+	margin-top: 10px;
+
+	border:2px solid blue;
+	
+}
+
+
 .filter ul {
 
 	display: flex;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-
 	align-items:center;
-	padding-left: 5px;
+
+	padding-left: 10px;
+
+	border:1px solid green;
 
 }
 
-.filtreleft span {
+.filterleft {
 
-	color: black;
-	font-weight: bold;
-	font-size: 0.8rem;
+	display: flex;
+
+	padding-top: auto;
+	line-height: 2;
+
+	border:2px solid black;
+	color: black;	
+
 }
 
 .filter ul li {
 
 	display: flex;
+	position: relative;
+	align-items: center;
+
+	height: 35px;
+
+
 	margin-right: 15px;
+	margin-left: 30px;
+	
+	border:1px solid blue;
 
 }
 
 .filtre-icon {
 
-	display: flex;
-	align-items: center;
 
-	padding-right: 10px;
-	padding-bottom: 15px;
-	margin-left: 20px;
+	margin-bottom:20px;
+	margin: 10px;
+	margin-left: 15px; 
 
-	border: 2px solid  #DEEBFF;
-	border-radius: 30px;
+	border: 2px solid #F2F2F2;
+	border-radius: 30px 30px 30px 30px;
 	
 }
 
 .filtre-icon span {
 
+	justify-content: center;
+	align-items: center;
+
 	padding-right: 10px;
 	margin-right: 10px;
 	margin-left: 45px;
 
-	justify-content: center;
-	align-items: center;
-
-	font-weight: bold;
-	color: black;
-	text-decoration: none;
-	font-size: 0.8rem;
+	color: red;
 
 }
 
-.filter i {
+.filter i {  /*icon*/
 
+	justify-content: center;
+	align-items: center;
 	position: absolute;
 	display: flex;
+
+	width: 35px;
+	height: 35px;
+	top: 0;
 	
 	background-color: #DEEBFF;
 	border-radius: 30px;
-	color:  #0065FC;
+	color: #0065FC; /*COULEUR ICON ECO FAM ... */
 	
-	justify-content: center;
-	align-items: center;
-	
-	width: 35px;
-	height: 35px;
+}
 
+a {
+
+	text-decoration: none;
 }
 
 /* id=info */
 
 #info span { 
 	
-	display:inline-block;
+	display:flex;
 
-	margin-top: 10px;
-	margin-bottom: 10px;
+	/*margin-top: 10px;
+	margin-bottom: 10px;*/
 
-	font-size: 0.6rem;
 }
 
 #info {
 
 	display: flex;
+
+	margin-top: 5px;
+
+	border:2px solid pink;
+	
 }
 
 .fa-info {
 
-	margin-right: 15px;
-	margin-left: 5px;
+	display: flex;
 
-	border: 50px;
+	margin:auto;
+	margin-right: 10px;
+	
+	padding:10px 15px 10px 15px;
+
+	
 	color: #0065FC;
+	
+	border:1px solid blue;
+	border-radius:30px;
 	
 }
 
-/* ----- Section-3 Hébergements + Populaires ----- */
+/* Section-3 Hébergements + Populaires */
 
 .section-3 {
 
 	display: flex;
 	justify-content: space-between;
 	
-	margin-bottom: 20px;
-	width: auto;
+	margin:auto;
+
+	border: 4px solid green;
+
 }
 
 .hébergement .populaires {
+
+	display: flex;
 
 	text-align: justify;
 
@@ -260,16 +313,60 @@ form {
 
 .hébergements { /* ici 	display: inline-block; */
 
+	
+	display: flex;
 	justify-content: space-between;
-	flex-flow:row wrap;
+	flex-wrap: wrap;
+	flex-direction: row;
 
-	margin-right: 20px;
-	padding: 10px;
-	flex: 3;
+	padding:20px;
+
+	flex: 1;
 
 	background-color: #F2F2F2;
-	border-radius: 20px 20px 20px 20px ;  /* bordure arrondi item droit*/
+	border-radius: 20px 20px 20px 20px ;
 
+	border:4px solid pink;
+
+}
+
+.hébergements h2 {
+
+	display: flex;
+	align-items: center;
+	
+	padding-left: 40px;
+	border: 2px solid green;
+
+}
+
+.carte-left { /* container avec toutes mes cartes */
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	border:2px solid blue;
+
+}
+
+.figure1 {  /* tout ce qu'il y a dans le contenu border white */
+
+	/*display: flex;*/
+
+	margin:auto;
+	padding: 5px;
+
+	/*margin:5px;
+	/*margin-bottom:15px;
+	padding: 5px;
+	padding-bottom:auto;*/
+
+	background-color: white; /*couleur de fond blanc */
+	border-radius: 10px 10px 10px 10px; /* arrondir bordures */
+	box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+
+	
 }
 
 .hébergements img {
@@ -278,110 +375,208 @@ form {
 	position: relative;
 	flex-flow: row;
 	
-	min-width: 190px; /*taille img largeur */
-	max-height: 80px; /*taille img hauteur */
+	min-width: 235px; /*taille img largeur */
+	max-height: 110px; /*taille img hauteur */
 
 	object-fit: cover; /* ajuster img*/
 	border-radius: 10px 10px 0px 0px;
+
 }
 
-figure { 
+.description { /*  h3 ,p et mes icons */
 
-	display:inline-block;
-	text-align: left; /*text à gauche */
+	display:flex;
+	flex-direction: column;
 
-	margin: 20px;
-	padding : 3px ;
-	
-	background-color: white; /*couleur de fond blanc */
-	border-radius: 10px 10px 10px 10px; /* arrondir bordures */
-	box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+	padding-left: 5px;
+
+	/*padding-bottom: 0px;
+		padding-top: 0px;*/
+
+	border:3px solid pink;
+
 }
 
-.hébergements h2 {
+.description h3 {
 
-	padding-left: 30px;
-	font-size: 1rem;
+	margin: 0px;
+	margin-top: 3px;
+
+	border: 2px solid black;
 }
 
-.hébergements p {
+.figure1 p {
 
-	font-size: 0.7rem;
+	display: flex;
+	margin: 0px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+
+	border:2px solid pink ;
 }
+
+.description span {
+
+	display: flex;
+	margin-bottom: 3px;
+
+	border:2px solid orange;
+
+}
+
 
 /* Les plus populaires */
 
 .populaires { 
 
-	display: block; /* afficher même ligne */
+	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
+	flex-direction: row;
 
-	flex: 1;
+	width: 400px;
+	margin-left: 30px;
+
 	padding: 10px; /* bouge le titre h2 */
-	padding-bottom: 20px;
+
+	/*padding-bottom: 20px;*/
 
 	background-color: #F2F2F2;
-	border-radius: 25px 25px 25px 25px ; 
+	border-radius: 25px 25px 25px 25px ;
+
+	border:3px solid black;
+}
+
+.populaires h2 {
+
+	display: flex;
+
+	padding-left: 20px;
+	margin-right: 50px;
+
+	border:2px solid blue;
+}
+
+.chart {
+
+	display: flex;
+	
+	align-items: center;
+	justify-content: flex-end;
+
+	margin-right: auto;
+
+	border:1px solid orange;
+
+
+	/*display: flex;
+	align-items: center;
+	
+	padding-left: 40px;
+	border: 2px solid green;*/
+}
+
+.carte-right {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	margin: auto;
+
+	border:3px solid yellow;
+}
+
+.figure2 {  /* encadre photos voir avec Dorian un peu bazar */
+
+	display: flex; /* afficher même ligne */
+	justify-content: space-between;
+
+	margin: 15px;  /* si je change le px le container gauche retaicie entre les cartes*/
+	padding: 5px;
+	padding-bottom: auto;
+
+	/*margin:15px; /*marge entre les background 
+	padding:5px ; /* marge interieur bas entre photos et bordure blanche */
+
+	text-decoration: none; 
+	background-color: white; 
+
+	border-radius: 10px 10px 10px 10px; 
+	box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+	border: 1px solid  blue;
 
 }
 
 .populaires img { /* good */
 
-	width: 80px; /*taille img largeur */
-	height: 80px; /*taille img hauteur */
+	width: 130px; /*126px; /*taille img largeur */
+	height: 140px; /*134px; /*taille img hauteur */
+
+
 
 	object-fit: cover; /* ajuster img*/
 	border-radius: 10px 0px 0px 10px;
 
-	flex: 1;
-	vertical-align: middle;
-	float: left;
+	border: 2px solid orange;
+
 }	
 
+.description-populaires {
+
+	display: flex;
+	flex-direction: column; /* je veux que ma flex soit en direction colonne */
+
+	padding: 5px;
+	padding-left: 12px;
+	margin-bottom: 0px;
+	
+	border:3px solid pink
+
+}
+
+
+.description-populaires h3 {
+
+	margin: auto;
+	margin-top: 5px;
+
+	border:2px solid yellow;
+
+
+}
 
 .populaires p {
 
-	padding-top: 0px;
-	padding-bottom: 0px;
+	margin-bottom: 40px;
 
+	border: 2px solid green;
 	text-align: left;
-	
-	font-size: 0.6rem;
 
 }
 
-.figure2 {  /* encadre photos voir avec Dorian un peu bazar */
+.figure2 span { /* colle les etoiles */
 
-	display: block; /* afficher même ligne */ 
-	text-align: left; /*text à gauche */
+	display: flex;
 
-	margin:15px; /*marge entre les background */
-	
-	padding:2px ; /* marge interieur bas entre photos et bordure blanche */
-	padding-left: 2px;
-	padding-bottom: 12px;
+	border:2px solid orange;
 
-	text-decoration: none; 
-	background-color: white; 
-	border-radius: 10px 10px 10px 10px; 
-	box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
-}
-
-.populaires h2 {
-
-	padding-left: 20px;
-	font-size: 1rem;
 }
 
 .fa-star {
 
-	color: #0065fc;;
-	font-size: 0.5rem;
+	margin-top: auto;
+	/*margin: 0px;*/
+	padding: auto;
+
+	color: #0065fc;
+
 }
 
 .far {
 
-	color:whitesmoke;
+	color: red;
+	/*color:whitesmoke;*/
 }
 /* ----- Section activités ----- */
 
@@ -404,38 +599,38 @@ figure {
 	width: 100%; /* voir avec D si je retire % tout est décalé */
     margin-left: 10px;
 
-	font-size: 1rem;
-
 }
 
-.section-activités h3{
-
-	padding-bottom:15px;
-	margin-top: 0px;
-}
 
 #container1 , #container2 { /*Disposition img*/
    
     display: flex;
     flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 
-    flex: 1;
+    flex: 2;
 
-    max-width: 665px;
-}
+    max-width: 660px;
 
-.colonne {
+  } 
+
+.colonne { /*Pomègue, Ile, Dame, Parc */
  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+
+ }
+
 
 #container2  .colonne  .small  a  div  img { /*Position img Notre Dame */
-   
-    object-position: top;
+ 	
+	object-position: top;
+  
 }
+
+
+
 
 /* Small */
 
@@ -443,12 +638,15 @@ figure {
     
     margin-top: 10px;
     margin-left: 20px;
+   
     color:black;
+
 }
 
 .small  a {
     
     text-decoration: none;
+
 }
 
 
@@ -459,30 +657,35 @@ figure {
 
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+
 }
 
-.small  a  div  img {
+.small  a  div  img { /* ile du frioul */
    
+
 	width: 300px;
     height: 110px;
 
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+
 }
 
 /* Moyenne */
 
 .moyenne  a  div  h3 { /* H3 : Img Fort Pomègues, Parc Longchamp */
     
-    margin-top: 20px; /* marge ext haut titre */
-    margin-left: 10px; /* marge ext gauche titre */
+    margin-top: 10px; /* marge ext haut titre */
+    margin-left: 20px; /* marge ext gauche titre */
 
 	color: black;
+
  }
 
 .moyenne  a { /* Img Fort Pomègues, Parc Longchamp */
     
     text-decoration: none;
+
 }
 
 .moyenne  a  div {/* Img Fort Pomègues, Parc Longchamp */
@@ -492,15 +695,17 @@ figure {
 
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 0px 10px 0px rgb(170, 170, 170);  
+
 }
 
 .moyenne  a  div  img { /* Img Fort Pomègues, Parc Longchamp */
 
     width: 300px; /* + le px est haut plus l'image sortira de la bordure blanche*/
-    height: 170px; /* + le px est haut + le h3 et la bordure descend */
+    height: 180px; /* + le px est haut + le h3 et la bordure descend */
   
 	object-fit: cover;
 	border-radius: 20px 20px 0px 0px;
+
 }
 
 
@@ -512,7 +717,7 @@ figure {
     margin-left: 20px;
 
 	color: black;
-	font-weight: bold;
+
 }
 
 .big  a {
@@ -523,10 +728,11 @@ figure {
 .big  a  div  img {/* Img  Vieux port, Calanques */
    
     width: 300px; /* + le px est haut plus l'image sortira de la bordure blanche*/
-    height: 370px; /* hauteur img */
+    height: 390px; /* hauteur img */
 
 	object-fit: cover;
     border-radius: 20px 20px 0 0;  
+
 }
 
 .big a  div { /* Img  Vieux port, Calanques */
@@ -536,6 +742,7 @@ figure {
    
 	border-radius: 20px 20px 20px 20px;
     box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+
 }
 
 
@@ -544,19 +751,23 @@ figure {
 .footer { /*centrer gauche,taiile,couleur*/ /* separer propriete     */
 
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
 
-	margin-top: 10px;
+	margin-right: 10px;
+	margin-top: 30px;
 	padding: 20px ;
 	
 	background-color: #F2F2F2;
+	border:2px solid yellow;
 }
 
 footer li a { /*couleur, enlever soulignement,*/
 
+	display: flex;
+	
 	text-decoration: none;
+
 	color: black;
+	border:1px solid orange;
 }
 
 footer ul { /*centrer gauche, enlever puce,taille*/
@@ -569,15 +780,28 @@ footer ul { /*centrer gauche, enlever puce,taille*/
 
 	list-style: none;
 	line-height: 2;
-	font-size: 10px;
+
+	border:2px solid green;
 }
 
-footer.div {
+.a-propos {
 
-	display: flex;
-	justify-content: space-around;
 
-	width: 35px;
+	border:2px solid blue;
+	flex: 1;
+	
+}
+
+.nos-hébergements {
+
+	border:3px solid pink;
+	flex: 1;
+}
+
+.assistance {
+
+	border:3px solid yellow;
+	flex: 1;
 }
 
 footer h3 {
@@ -586,14 +810,4 @@ footer h3 {
 	padding-bottom: 10px;
 
 	color: black;
-	font-size: 0.7rem;
-	font-weight: bold;
-}
-
- /* ---------- H2 , P1, H3 ---------- */
-
- h3 {
-
-	font-size: 10px;
-	font-weight: bolder;
 }
