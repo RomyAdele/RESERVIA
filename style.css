@@ -68,6 +68,11 @@ nav a {
 	font-size: 0.8rem;
 }
 
+.nav-register {
+
+	font-weight: bold;
+}
+
 /* ----- section-1 -----*/
 
 .section-titre{
@@ -127,7 +132,7 @@ form {
 	margin-right: 2px;
 
 	border: none;
-	border-radius: 15px 0 0 15px;
+	border-radius: 10px 0 0 10px;
 
 	background-color:#F2F2F2;
 }
@@ -148,7 +153,7 @@ form {
 
 	padding: 10px;
 
-	border-radius: 0px 15px 15px 0;
+	border-radius: 0px 10px 10px 0;
 	border: none;
 
 	background-color: #0065fc;
@@ -161,33 +166,40 @@ form {
 .filter {
 
 	display: flex;
-	margin-top: 10px;
+	flex-wrap: wrap;
+
+	margin: auto;
+	padding: 0px;
 
 	border:2px solid blue;
 }
-
-.filter ul {
-
-	display: flex;
-	align-items:center;
-
-	padding-left: 10px;
-
-	border:1px solid green;
-}
-
 .filterleft {
 
 	display: flex;
+	flex-wrap: wrap;
 
 	align-items: center;	
-	padding-top: auto;
-	line-height: 2;
+	padding: 15px;
+	line-height: 1;
 
 	border:2px solid black;
 	color: black;	
 	font-size: 0.9rem;
 }
+
+.filter ul {
+
+	display: flex;
+	flex-wrap: wrap;
+	
+
+	align-items:center;
+	padding-left: 0px;
+
+	border:1px solid green;
+}
+
+
 
 .filter ul li {
 
@@ -197,8 +209,8 @@ form {
 
 	height: 35px;
 
-	margin-right: 15px;
-	margin-left: 30px;
+	/*margin-right: 15px;
+	margin-left: 30px;*/
 	
 	border:1px solid blue;
 }
@@ -240,11 +252,12 @@ form {
 	background-color: #DEEBFF;
 	border-radius: 30px;
 	color: #0065FC; /*COULEUR ICON ECO FAM ... */	
-	font-size: 0.8rem;
+
 }
 
 a {
 
+	display: flex;
 	text-decoration: none;
 }
 
@@ -261,8 +274,8 @@ a {
 
 	margin-top: 5px;
 
-	border:2px solid pink;	
-	font-size: 0.9rem;
+	border:2px solid black;	
+	
 }
 
 .fa-info {
@@ -273,6 +286,7 @@ a {
 	margin-right: 10px;
 	
 	padding:10px 15px 10px 15px;
+
 
 	color: #0065FC;  	
 	border:1px solid blue;
@@ -328,7 +342,7 @@ a {
 	font-size: 1rem;
 }
 
-.carte-left { /* container avec toutes mes cartes */
+.card-left { /* container avec toutes mes cartes */
 
 	display: flex;
 	flex-wrap: wrap;
@@ -337,10 +351,11 @@ a {
 	border:2px solid blue;
 }
 
-.figure1 {  /* tout ce qu'il y a dans le contenu border white */
+.card1 {  /* tout ce qu'il y a dans le contenu border white */
 
-	/*display: flex;*/
-	margin:auto;
+	display: flex;
+	flex-direction: column;
+	margin:20px 5px;
 	padding: 5px;
 
 	background-color: white;
@@ -371,7 +386,7 @@ a {
 	border:3px solid pink;
 }
 
-.carte-left > a  {
+.card-left > a  {
 	
 	text-decoration: none;
 	color: black;
@@ -386,7 +401,7 @@ a {
 	font-size: 0.8rem;
 }
 
-.figure1 p {
+.card1 p {
 
 	display: flex;
 
@@ -432,23 +447,24 @@ a {
 .chart {
 
 	display: flex;
+	justify-content: space-between;
 	
 	border:1px solid orange;
 }
 
-.carte-right {
+.card-right {
 
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	flex-direction: column;
 	
 	margin: auto;
 	
-
 	border:3px solid yellow;
 }
 
-.figure2 {
+.card2 {
 
 	display: flex;
 	
@@ -480,35 +496,39 @@ a {
 	display: flex;
 	flex-direction: column;
 
-	padding: 5px;
-	padding-left: 12px;
-	margin-bottom: 0px;
+	padding: 15px;
 	
+		
 	border:3px solid pink
 }
 
 .description-populaires h3 {
 
-	margin: auto;
-	margin-top: 5px;
+	/*margin: auto;
+	margin-top: 5px;*/
 
 	border:2px solid yellow;
-	font-size: 0.8rem;
+	font-size: 1rem;
+	line-height: 1.2rem;
+	margin: 0 0 10px 0;
 }
 
 .populaires p {
 
 	text-align: left;
 
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
+	margin-top: 0px;
 
-	font-size: 0.6rem;
+	font-size: 0.8rem;
 	border: 2px solid green;
 }
 
-.figure2 span { /* colle les etoiles */
+.card2 span {
 
 	display: flex;
+
+	margin-top: auto;
 
 	border:2px solid orange;
 }
@@ -540,6 +560,7 @@ a {
 
 	background-color:white;
 	border-radius: 25px 25px 25px 25px ; 
+	border: 2px solid blue;
 }
 
 #section-activités h2 {/* Titre Activités */
@@ -680,6 +701,7 @@ a {
 .footer { /*centrer gauche,taiile,couleur*/ /* separer propriete     */
 
 	display: flex;
+	flex-wrap: wrap;
 
 	margin-right: 10px;
 	margin-top: 30px;
@@ -740,3 +762,8 @@ footer h3 {
 	font-size: 0.9rem;
 	color: black;
 }
+
+/*@media and (max-width: 1440px ) { .footer {
+		flex-wrap: wrap;}
+	}*/
+
