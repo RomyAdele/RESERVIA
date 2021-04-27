@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Reservia</title>
 		<link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap"rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/a6367465aa.js" crossorigin="anonymous"></script>
 
     </head>
@@ -23,8 +23,8 @@
 
 			<nav>
        			<ul class="menu">
-  					<li class="nav-link"><a href="Hébergements">Hébergements</a></li>
-  					<li class="nav-link"><a href="Activités">Activités</a></li>
+  					<li class="nav-link"><a href="hébergements">Hébergements</a></li>
+  					<li class="nav-link"><a href="activités">Activités</a></li>
 	   				<li class="nav-register"><a href="#">S'inscrire</a></li>
 				</ul>
 			</nav>
@@ -41,8 +41,8 @@
 
 	 		<form class="search-container">
 				<button class="button" type="submit"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></button>
-				<input class ="input1" type="text" name="text1" placeholder="Marseille, France">
-				<button class="rechercher" type="submit">Rechercher</button>
+				<input class ="champstext" type="text" name="localisation" placeholder="Marseille, France">
+				<button class="rechercher"><i id="loupe" class= "fas fa-search"></i><span>Rechercher</span></button>
 			</form>
 						
 		</section>
@@ -55,13 +55,13 @@
 					<h2 class="filterleft"><span>Filtres</span></h2>
 
 					<ul>
-						<li class="filtre-icon"><a href=""><i class="fas fa-money-bill-wave"></i>
+						<li class="filter-icon"><a href=""><i class="fas fa-money-bill-wave"></i>
 						<span>Économique</span></a></li>
-						<li class="filtre-icon"><a href=""><i class="fas fa-child"></i>
+						<li class="filter-icon"><a href=""><i class="fas fa-child"></i>
 						<span>Familial</span></a></li>
-						<li class="filtre-icon"><a href=""><i class="fas fa-heart"></i>
+						<li class="filter-icon"><a href=""><i class="fas fa-heart"></i>
 						<span>Romantique</span></a></li>
-						<li class="filtre-icon"><a href=""><i class="fas fa-dog"></i>
+						<li class="filter-icon"><a href=""><i class="fas fa-dog"></i>
 						<span>Animaux autorisés</span></a></li>
 					</ul>
 				
@@ -79,7 +79,7 @@
 
 			<div class=hébergements>
 
-				<h2>Hébergement à Marseille</h2>
+				<h2>Hébergements à Marseille</h2>
 				
 				<div class="card-left">
 					
@@ -95,12 +95,9 @@
 										<i class="fas fa-star"></i>
 										<i class="fas fa-star"></i>
 										<i class="far fa-star"></i>
-									</span>
+									</span>		
 						</div>		
 						</a>			
-					
-
-					<!--</a>-->
 
 					<a class="card1" href="">
 						<img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt= "Hôtel du port">
@@ -119,7 +116,7 @@
 					
 					<a class="card1" href="">
 
-						<img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"alt= "Hôtel les mouettes">
+						<img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt= "Hôtel les mouettes">
 					
 						<div class="description">
 							<h3>Hôtel Les mouettes</h3>
@@ -152,7 +149,7 @@
 					</a>
 						
 					<a class="card1" href="">
-						<img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"alt="Auberge le panier ">
+						<img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier ">
 						
 						<div class="description">
 							<h3>Auberge Le Panier</h3>
@@ -184,7 +181,7 @@
 					</a>
 				</div>	
 
-				<div class="plus">
+				<div class="afficher">
 					<p>Afficher plus</p>
 				</div>
 
@@ -210,7 +207,7 @@
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
 											<i class="fas fa-star"></i>
-											<i class="far fa-star"></i>
+											<i class="fas fa-star"></i>
 										</span>
 							</div>
 					</a>
@@ -362,4 +359,3 @@
 		</main>
     </body>
 </html>
-

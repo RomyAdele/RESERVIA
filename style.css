@@ -7,16 +7,16 @@ body{
 body html{
 
 	margin: 0;
+
 }
 
 main {
-	
-	margin: auto;
-	max-width: 1440px;
-	padding: 70px 70px;
-	width: 100%
-}
 
+	max-width: 1440px;
+	width: 100%;
+	padding: 10px 10px;
+	box-sizing: border-box;
+}
 
 /* ----- HEADER ----- */
 
@@ -24,7 +24,10 @@ header {
 	
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
+
+	border:1px solid green;
+
 }
 
 .logo {
@@ -49,6 +52,7 @@ nav ul {
 
 	list-style-type: none;
 	display: flex;
+	flex-wrap: wrap;
 
 	border:1px solid black;
 	
@@ -58,24 +62,26 @@ nav li {
 
 	margin-right: 30px;  /*espace entre h,a,s */
 	border:1px solid pink;	
+
 }
 
 nav a {
 	
 	text-decoration: none;
+	color: #0065FC;
+	font-size: 1rem;
 
-	color: #0065FC;	
-	font-size: 0.8rem;
 }
 
-.nav-register {
+nav a:hover {
 
-	font-weight: bold;
+	color: black;
+	border-top:2px solid blue;
+
 }
-
 /* ----- section-1 -----*/
 
-.section-titre{
+.section-titre {
 
 	display: flex;
 	flex-direction: column;
@@ -84,14 +90,17 @@ nav a {
 	margin-bottom: 15px;
 
 	border:1px solid blue;
+
 }
 
 h1 {
 
 	margin-top: auto;
+	margin-bottom: 10px;
 
 	border:1px solid green;
-	font-size: 1.1rem;
+	font-size: 1.4rem;
+
 }
 
 .section-1 p {
@@ -99,21 +108,24 @@ h1 {
 	display: flex;
 	flex-wrap: wrap;
 
-	margin-bottom: 5px;
+	margin-bottom:auto;
 	margin-top: auto;
 
+	font-size: 1rem;
 	border:1px solid orange;
-	font-size: 0.8rem;
+	
 }
 
-/* search-1 class= search-container */
+/* search-container */
 
 form {
 
-	display: flex; /* colle les 3 ensembles*/
+	display: flex;
 	align-items: center;
 
-	border:2px solid green;
+	margin-bottom: 10px;
+
+	/*border:1px solid green;*/
 }
 
 .button .fas { /*icon */
@@ -124,29 +136,32 @@ form {
 
 	background:none;
 	color: black;
-	font-size: 0.9rem;
+	font-size: 1.2rem;
+
 }
 
- .button { /* voir avec dorian car mag*/
-
-	margin-right: 2px;
+ .button { 
 
 	border: none;
 	border-radius: 10px 0 0 10px;
 
 	background-color:#F2F2F2;
+	/*border: 1px solid pink;*/
 }
 
-.input1 {
+.champstext {
 
-	text-align: center;
+	text-align: left;
 
-	margin-left: 15px;
-	margin-right: 20px;
+	margin-left: 0px;
 	padding: 10px;
 
 	border:none;
-	font-size: 0.9rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+
+	/*border:1px solid blue;*/
+
 }
 
 .rechercher {
@@ -157,8 +172,23 @@ form {
 	border: none;
 
 	background-color: #0065fc;
-	color: seashell;
-	font-size: 0.9rem;
+	color: white;
+
+	font-size: 1.2rem;
+	font-weight: 500;
+
+}
+
+#loupe {
+
+	display: none;
+
+}
+
+form :hover {
+
+	color: black;
+
 }
 
 /* ----- Section-2 ----- */ 
@@ -173,33 +203,31 @@ form {
 
 	border:2px solid blue;
 }
+
 .filterleft {
 
 	display: flex;
 	flex-wrap: wrap;
-
 	align-items: center;	
-	padding: 15px;
+	
 	line-height: 1;
+	font-size: 1.2rem;
+	font-weight: 700;
 
-	border:2px solid black;
 	color: black;	
-	font-size: 0.9rem;
 }
 
 .filter ul {
 
 	display: flex;
 	flex-wrap: wrap;
-	
-
 	align-items:center;
-	padding-left: 0px;
 
-	border:1px solid green;
+	padding-left: 10px;
+
+	/*border:1px solid green;*/
+
 }
-
-
 
 .filter ul li {
 
@@ -207,47 +235,45 @@ form {
 	position: relative;
 	align-items: center;
 
-	height: 35px;
+	height: 35px; 
 
-	/*margin-right: 15px;
-	margin-left: 30px;*/
-	
-	border:1px solid blue;
+	border:1px solid #F2F2F2;
+
 }
 
-.filtre-icon {
+.filter-icon {
 
-	margin-bottom:20px;
-	margin: 10px;
-	margin-left: 15px; 
+	margin:10px 10px 10px 15px; 
 
 	border: 2px solid #F2F2F2;
 	border-radius: 30px 30px 30px 30px;	
+
 }
 
-.filtre-icon span {
+.filter-icon span {
 
 	justify-content: center;
 	align-items: center;
 
 	padding-right: 10px;
-	margin-right: 10px;
-	margin-left: 45px;
+	margin: 0 10px 0 50px;
+	
+	color: black;
+	font-size: 1.2rem;
+	font-weight: 600;
 
-	color: red;
-	font-size: 0.9rem;
 }
 
 .filter i {  /*icon*/
 
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	display: flex;
 
-	width: 35px;
-	height: 35px;
-	top: 0;
+	width: 40px;
+	height: 39px;
+	top: -2px;
 	
 	background-color: #DEEBFF;
 	border-radius: 30px;
@@ -261,14 +287,15 @@ a {
 	text-decoration: none;
 }
 
-/* id=info */
+.filter :hover {
 
-#info span { 
+	color: blue;
 	
-	display:flex;
 }
 
-#info {
+/* id=info */
+
+#info { 
 
 	display: flex;
 
@@ -278,20 +305,28 @@ a {
 	
 }
 
+#info span { 
+	
+	display:flex;
+	border: 2px solid green;
+
+}
+
 .fa-info {
 
 	display: flex;
 
-	margin:auto;
+	margin: auto;
 	margin-right: 10px;
 	
-	padding:10px 15px 10px 15px;
-
+	padding:5px 9px 5px 9px;
 
 	color: #0065FC;  	
-	border:1px solid blue;
+	border:1px solid #F2F2F2;
 	border-radius:30px;
+
 	font-size: 0.8rem;
+	font-weight: 400;
 }
 
 /* Section-3 Hébergements + Populaires */
@@ -302,9 +337,9 @@ a {
 	justify-content: space-between;
 	flex-wrap: wrap-reverse;
 	
-	margin:auto;
-
-	border: 4px solid green;
+	margin:30px 0 0 0;
+	
+	/*border: 4px solid green;*/
 }
 
 .hébergement .populaires {
@@ -316,51 +351,53 @@ a {
 
 /* Hébergements */
 
-.hébergements { /* ici 	display: inline-block; */
+.hébergements { 
 	
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 
-	padding:20px;
+	margin-right: 50px;
+	padding: 0 15px 0 15px;
 
 	flex: 1;
 
 	background-color: #F2F2F2;
 	border-radius: 20px 20px 20px 20px ;
-	border:4px solid pink;
+	/*border:4px solid black;*/
 }
 
 .hébergements h2 {
 
-	align-items: center;
+	margin: 40px 0 0 0;
+	padding-left: 25px;
 
-	margin-top: 0px;
-	padding-left: 40px;
-
-	border: 2px solid green;
-	font-size: 1rem;
+	font-size: 1.3rem;
+	/*border: 2px solid green;*/	
 }
 
 .card-left { /* container avec toutes mes cartes */
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
 
-	border:2px solid blue;
+	margin-bottom: auto;
+	/*border:2px solid blue;*/
 }
 
 .card1 {  /* tout ce qu'il y a dans le contenu border white */
 
 	display: flex;
 	flex-direction: column;
+
 	margin:20px 5px;
 	padding: 5px;
 
 	background-color: white;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 20px 20px 20px 20px;
 	box-shadow: 0 0px 10px 0px rgb(170, 170, 170);	
+
 }
 
 .hébergements img {
@@ -369,87 +406,116 @@ a {
 	position: relative;
 	flex-flow: row;
 	
-	min-width: 240px;
-	max-height: 116px;
+	min-width: 250px;
+	max-height: 115px;
 
 	object-fit: cover;
-	border-radius: 10px 10px 0px 0px;
+	border-radius: 15px 15px 0px 0px;
+
 }
 
-.description { /*  h3 ,p et mes icons */
+.description { /* h3 ,p et mes icons */
 
 	display:flex;
 	flex-direction: column;
 
-	padding-left: 5px;
+	padding: 5px 0 0 10px;
 
-	border:3px solid pink;
+	/*border:3px solid pink;*/
 }
 
 .card-left > a  {
 	
 	text-decoration: none;
 	color: black;
+
 }
 
 .description h3 {
 
-	margin: 0px;
-	margin-top: 3px;
+	margin: 2px;
+	
+	font-size: 1.1rem;
+	line-height: 1.1rem;
 
-	border: 2px solid black;
-	font-size: 0.8rem;
+	/*border: 2px solid black;*/
 }
 
 .card1 p {
 
 	display: flex;
+	
+	margin:2px;
 
-	margin: 0px;
-	margin-top: 3px;
-	margin-bottom: 3px;
-
-	border:2px solid pink ;
-	font-size: 0.6rem;
+	font-size: 1rem;
+	/*border:2px solid pink ;*/
 }
 
 .description span {
 
 	display: flex;
-	margin-bottom: 3px;
 
-	border:2px solid orange;
+	margin: 5px 0 3px 0;
+
+	/*border:2px solid orange;*/
 }
 
+.afficher {
+
+	display: flex;
+
+	margin-left: 20px;
+
+	font-weight: bold;
+	font-size: 1.2rem;
+
+}
+
+.afficher :hover {
+
+	color: blue;
+	
+}
 /* Les plus populaires */
 
 .populaires { 
 
 	width: 400px;
 
-	margin-left: 30px;
-	padding: 20px;
+	margin:0px;
+	padding: 20px 15px 20px 15px;
 
 	background-color: #F2F2F2;
 	border-radius: 25px 25px 25px 25px ;
-	border:3px solid black;
+	/*border:3px solid black;*/
 }
 
 .populaires h2 {
 
 	padding-left: 20px;
-	margin-top: 0px;
+	margin: 0 0 20px 0;
 
-	border:2px solid blue;
-	font-size: 1rem;
+	font-size: 1.3rem;
+	/*border:2px solid blue;*/	
 }
 
 .chart {
 
 	display: flex;
 	justify-content: space-between;
+
+	padding: 0px 0 0 10px;
+	margin: 20px 0 0 0px;
 	
-	border:1px solid orange;
+	/*border:1px solid orange;*/
+}
+
+.fa-chart-line {
+
+	margin-right: 20px;
+
+	font-size: 1.3rem;
+	/*border:1px solid blue;*/	
 }
 
 .card-right {
@@ -459,36 +525,35 @@ a {
 	justify-content: space-between;
 	flex-direction: column;
 	
-	margin: auto;
+	margin: 5px;
 	
-	border:3px solid yellow;
+	/*border:3px solid yellow;*/
 }
 
 .card2 {
 
 	display: flex;
 	
-	margin:15px; 
+	margin: 10px 25px 25px 25px;
 	padding: 5px;
-	padding-bottom: auto;
-
+	
 	text-decoration: none; 
 	background-color: white; 
 
-	border-radius: 10px 10px 10px 10px; 
+	border-radius: 20px 20px 20px 20px; 
 	box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
-	border: 1px solid  blue;
+	/*border: 1px solid  blue;*/
 }
 
 .populaires img { 
 
-	width: 130px;
-	height: 135px;
-
+	width: 125px;
+	height: 130px;
+	
 	object-fit: cover;
-	border-radius: 10px 0px 0px 10px;
+	border-radius: 15px 0px 0px 15px;
 
-	border: 2px solid orange;
+	/*border: 2px solid orange;*/
 }	
 
 .description-populaires {
@@ -496,32 +561,32 @@ a {
 	display: flex;
 	flex-direction: column;
 
-	padding: 15px;
-	
+	padding: 2px; 
+	margin: 10px 0 0 15px;
 		
-	border:3px solid pink
+	/*border:3px solid pink*/
 }
 
 .description-populaires h3 {
 
-	/*margin: auto;
-	margin-top: 5px;*/
+	font-size: 1.1rem;
+	line-height: 1.1rem;
 
-	border:2px solid yellow;
-	font-size: 1rem;
-	line-height: 1.2rem;
 	margin: 0 0 10px 0;
+	color: black;
+
+	/*border:2px solid yellow;*/
 }
 
 .populaires p {
 
 	text-align: left;
 
-	/*margin-bottom: 40px;*/
 	margin-top: 0px;
 
-	font-size: 0.8rem;
-	border: 2px solid green;
+	font-size: 1rem;
+	color: black;
+	/*border: 2px solid green;*/
 }
 
 .card2 span {
@@ -529,24 +594,25 @@ a {
 	display: flex;
 
 	margin-top: auto;
+	margin-bottom: 5px;
 
-	border:2px solid orange;
+	/*border:2px solid orange;*/
 }
 
 .fa-star {
 
 	margin-top: auto;
-	padding: auto;
-
+	
 	color: #0065fc;
 	font-size: 0.8rem;
 }
 
 .far {
 
-	color: red;
-	/*color:whitesmoke;*/
+	color:#F2F2F2;
+
 }
+
 /* ----- Section activités ----- */
 
 #section-activités {
@@ -555,123 +621,119 @@ a {
     flex-wrap:wrap;
     justify-content: space-between;
    
-	margin-top: 20px 0px 60px 50px ;
-    padding: 10px; /* bouge le titre h2 */
+    margin:0 0 50px 0px;
+    padding: 0px;
 
-	background-color:white;
-	border-radius: 25px 25px 25px 25px ; 
-	border: 2px solid blue;
+    max-width: 1440px;
+    height: auto;
+	
 }
 
-#section-activités h2 {/* Titre Activités */
+#section-activités h2 {
     
-	width: 100%; /* voir avec D si je retire % tout est décalé */
-    margin-left: 10px;
+	width: 100%;
+    margin-left: 15px;
 
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 }
 
 #container1 , #container2 { /*Disposition img*/
    
     display: flex;
     flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 
-    flex: 2;
+    flex: 1;
 
-    max-width: 660px;
+    max-width: 700px;
 } 
 
-.colonne { /*Pomègue, Ile, Dame, Parc */
+.colonne { /*Pomègue + Frioul, NDGarde + Longchamps */
  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
-#container2  .colonne  .small  a  div  img { /*Position img Notre Dame */
+#container2  .colonne  .small  a  div  img { /*Position img NDGarde */
  	
 	object-position: top;
 }
 
-/* Small */
-
-.small  a  div  h3 {/* Img  îles du Frioul, Notre Dame  */
-    
-    margin-top: 10px;
-    margin-left: 20px;
-   
-    color:black;
-	font-size: 0.8rem;
-}
+/* Small  Ile du frioul + NDGarde */ 
 
 .small  a {
     
     text-decoration: none;
 }
 
-.small  a  div  {/* img small, si je mets img je n'aurais pas de border radius*/
+.small  a  div  {
    
     width: 300px;
     height: 165px;
 
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+
 }
 
-.small  a  div  img { /* ile du frioul */
+.small  a  div  img { 
    
 	width: 300px;
     height: 110px;
 
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+
 }
 
-/* Moyenne */
-
-.moyenne  a  div  h3 { /* H3 : Img Fort Pomègues, Parc Longchamp */
+.small  a  div  h3 {/* Img Frioul + NDGarde */
     
-    margin-top: 10px; /* marge ext haut titre */
-    margin-left: 20px; /* marge ext gauche titre */
+  	margin: 10px 0 0 20px;
 
-	color: black;
-	font-size: 0.8rem;
- }
+    color:black;
+	font-size: 1.1rem;
 
-.moyenne  a { /* Img Fort Pomègues, Parc Longchamp */
-    
+}
+
+/* Moyenne Img Fort Pomègues +Parc Longchamp  */
+
+.moyenne  a {     
     text-decoration: none;
+
 }
 
-.moyenne  a  div {/* Img Fort Pomègues, Parc Longchamp */
+.moyenne  a  div {
    
     width: 300px;
     height: 235px; 
 
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 10px 0px rgb(170, 170, 170);  
+    box-shadow: 0px 0px 10px 0px rgb(170, 170, 170);
+
 }
 
-.moyenne  a  div  img { /* Img Fort Pomègues, Parc Longchamp */
+.moyenne  a  div  img { 
 
-    width: 300px; /* + le px est haut plus l'image sortira de la bordure blanche*/
-    height: 180px; /* + le px est haut + le h3 et la bordure descend */
+    width: 300px; 
+    height: 180px; 
   
 	object-fit: cover;
 	border-radius: 20px 20px 0px 0px;
+
 }
 
-/* Big */
-
-.big  a  div  h3 {  /* Img  Vieux port, Calanques */
+.moyenne  a  div  h3 { 
     
-    margin-top: 10px;
-    margin-left: 20px;
+    margin: 10px 0 0 20px;
 
 	color: black;
-	font-size: 0.8rem;
-}
+	font-size: 1.1rem;
+
+ }
+
+/* Big  Vieux port + Calanques */
 
 .big  a {
 
@@ -685,6 +747,7 @@ a {
 
 	object-fit: cover;
     border-radius: 20px 20px 0 0;  
+
 }
 
 .big a  div { /* Img  Vieux port, Calanques */
@@ -694,6 +757,15 @@ a {
    
 	border-radius: 20px 20px 20px 20px;
     box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+
+}
+
+.big  a  div  h3 { 
+    
+    margin: 10px 0 0 20px;
+
+	color: black;
+	font-size: 1.1rem;
 }
 
 /* ----- FOOTER ----- */
@@ -703,12 +775,11 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 
-	margin-right: 10px;
-	margin-top: 30px;
-	padding: 20px ;
-	
+	padding: 30px;	
+	margin:30px -30px 0 -30px;
+
 	background-color: #F2F2F2;
-	border:2px solid yellow;
+	
 }
 
 footer li a { /*couleur, enlever soulignement,*/
@@ -718,10 +789,20 @@ footer li a { /*couleur, enlever soulignement,*/
 	text-decoration: none;
 
 	color: black;
-	border:1px solid orange;
+	
 }
 
-footer ul { /*centrer gauche, enlever puce,taille*/
+footer h3 {
+
+	margin-top: 0px;
+	padding-bottom: 0px;
+
+	font-size: 1.1rem;
+	color: black;
+
+}
+
+footer ul { /*centrer gauche, enlever puces ,taille*/
 
 	display:flex;
 	flex-direction: column;
@@ -732,38 +813,224 @@ footer ul { /*centrer gauche, enlever puce,taille*/
 	list-style: none;
 	line-height: 2;
 
-	border:2px solid green;
 	font-size: 0.8rem;
 }
 
 .a-propos {
 
-	border:2px solid blue;
 	flex: 1;
 }
 
 .nos-hébergements {
 
-	border:3px solid pink;
 	flex: 1;
 }
 
 .assistance {
 
-	border:3px solid yellow;
 	flex: 1;
 }
 
-footer h3 {
+.footer ul :hover {
 
-	margin-top: 0px;
-	padding-bottom: 10px;
-
-	font-size: 0.9rem;
-	color: black;
+	color: blue;
+	
 }
 
-/*@media and (max-width: 1440px ) { .footer {
-		flex-wrap: wrap;}
-	}*/
+/*-----RESPONSIVE-----*/
 
+@media screen and (max-width: 450px) {
+
+
+	body {
+		
+		width:450px;
+	}
+
+
+	.form {
+
+		display: flex;
+		margin-right: 0px;
+
+	}
+
+	.rechercher span{
+
+		display: none;
+
+	}
+
+	#loupe{
+
+		display: block;
+
+		width: 23px;
+		height: 22px;
+
+		color: white;
+		border-radius: 20px 20px 20px 20px;
+
+	}
+
+	.filter ul {
+
+		border: 1px solid red;
+		
+	}
+
+	.populaires {
+
+		width: 100%;
+
+		padding: 0px;
+		margin-top: 30px;
+
+		border-radius: 0px;
+
+	}
+
+	.card-right {
+
+		display: block;
+	}
+	
+
+	.card-left {
+
+		display: block;
+		width: 100%;
+
+		margin: 0px;
+
+	}
+
+	.hébergements {
+
+		width: 100%;
+
+		padding: 0px;
+		margin:0px;
+
+		background-color: white;
+	}
+
+	.hébergements h2{
+
+		width: 100%;
+
+	}
+
+	.card1 {
+
+		width: 100%;
+		
+	}
+
+	#section-activités {
+
+		width: 100%;
+		flex-direction: column;
+		
+	}
+
+	#container1, #container2{
+
+		width: 450px;
+		
+	}
+	
+	#section-activités h2{
+
+		font-size: 1.3rem;
+
+	}	
+	
+/*card Frioul + NDGarde*/
+
+	.small a div {
+
+		width: 100%;
+		height: 190px;
+
+		margin-bottom:40px; 
+
+	}
+
+	.small a div img {
+
+		width: 100%; 
+		height:135px;
+
+	}
+
+	.small a div h3 {
+		
+		padding-bottom: 30px;
+
+	}
+
+/* card Pomègues - Longchamps */
+
+	.moyenne a div{
+
+		width: 100%;
+		height: 190px;
+
+		margin-bottom:40px; 
+
+	}
+
+	.moyenne a div img {
+		
+		width: 100%; 
+		height:135px;
+
+	}
+
+	.moyenne a div h3 {
+
+		padding-bottom: 30px;
+
+	}
+
+/*card Vieux port + Calanques */
+
+	.big a div {
+
+		width: 100%;
+		height: 190px;
+
+		margin-bottom:40px;
+
+	}
+
+	.big a div img {
+
+		width: 100%; 
+		height:135px;
+
+	}
+
+	.big a div h3{
+
+		padding-bottom: 30px;
+
+	}
+
+	.footer {
+
+		min-width: 450px;
+		flex-direction: column;
+
+		padding: 50px; 
+		margin-top: -20px;
+
+	}
+
+	.footer h3 {
+
+	padding-top: 5px;
+
+	}
+}
