@@ -14,36 +14,30 @@
 
 		<header>
 
-			<div class="container-header">
+                <img class="logo" src="images/logo/Reservia.svg"alt="logo"/>
 
-				<div class="logo">
-					<img class="logo" src="images/logo/Reservia@3x.png" alt="logo"/>
-				</div>
-			</div>
+                <nav>  
+                    <a  href="Hébergements">Hébergements</a>
+                    <a  href="Activités">Activités</a>
+                </nav>
 
-			<nav>
-       			<ul class="menu">
-  					<li class="nav-link"><a href="hébergements">Hébergements</a></li>
-  					<li class="nav-link"><a href="activités">Activités</a></li>
-	   				<li class="nav-register"><a href="#">S'inscrire</a></li>
-				</ul>
-			</nav>
-
-		</header>
-
+                <a href="inscrire">S'inscrire</a>
+            
+        </header>
 
 		<section class="section-1">
 
 			<div class="section-titre">
-				<h1>Trouvez votre hébergement pour des vancances de rêve</h1>
+				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			 	<p><span>En plein centre ville ou en pleine nature</span></p>
 			</div>
 
-	 		<form class="search-container">
-				<button class="button" type="submit"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></button>
-				<input class ="champstext" type="text" name="localisation" placeholder="Marseille, France">
-				<button class="rechercher"><i id="loupe" class= "fas fa-search"></i><span>Rechercher</span></button>
-			</form>
+	 		<div class="search-container"> <!--form search box index.html-->
+				<div class="map"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div> <!--ville-->
+				<input class ="champstext" type="text" name="localisation" placeholder="Marseille, France"> <!--champs-->
+				<button class="rechercher"><i id="loupe" class= "fas fa-search"></i><span>Rechercher</span></button> <!--button rechercher-->
+
+			</div>
 						
 		</section>
 			
@@ -359,3 +353,4 @@
 		</main>
     </body>
 </html>
+
