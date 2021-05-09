@@ -204,18 +204,27 @@ h1 {
 	background-color: #deebff;
 }
 
-.filter-icon span {
+.filter-icon span { /* placement des icônes */
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	margin-right: 30px; /* marge entre les span */
-	padding: 15px 30px 15px 65px; /* le padding positionne les icons à la gauche de son span */
+	padding: 15px 30px 15px 65px; /* le padding positionne l'icône à la gauche de son span */
 
 	border: 2px solid #d9d9d9;
 	border-radius: 30px;
 	color: black;;
+}
+
+.filter a { /* apparence icônes + span */
+
+	font-size: 1.2rem;
+	font-weight: bold;
+
+	color: #0065fc;
+	text-decoration: none;
 }
 
 
