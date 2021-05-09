@@ -279,9 +279,21 @@ h1 {
 
 .hébergements {
 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 900px;
+
 	background-color: #f2f2f2;
 	border-radius: 15px;
 }
+
+.hébergements h2 {
+
+	display: flex;
+	width: 100%;
+}
+
 .hébergements  img {
 
 	width: 250px;
@@ -289,10 +301,16 @@ h1 {
 	object-fit: cover;
 }
 
+.populaires {
+
+	background-color: #f2f2f2;
+	border-radius: 15px;
+}
 .populaires img {
 
 	width: 120px;
 	height: 130px;
 	object-fit: cover;
 }
+
 
