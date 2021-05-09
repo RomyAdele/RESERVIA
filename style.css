@@ -114,5 +114,19 @@ h1 {
 	border-left: 1px solid #f2f2f2;
 	border-radius: 15px 0 0 15px;
 
+	font-size: 1.2rem;
 	background-color: #f2f2f2;
+}
+
+.champstext {
+
+	padding: 0px 15px;
+
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	border-left: none;
+	border-right: none;
+
+	font-size: 1.2rem;
+	font-weight: bold;
 }
