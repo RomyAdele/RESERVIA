@@ -148,3 +148,30 @@ h1 {
 	color: white;
 	background-color: #0065fc;
 }
+
+/*-----  section-2  -----*/
+
+.section-2 {
+
+	display: flex;
+	flex-wrap: wrap;
+
+	background-color: antiquewhite;
+}
+
+.filter { /* filtre , icon , span . sur la même ligne pas aligné */
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.filter ul { /* icon + span eco ... sur la même ligne */
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	margin: 0px;
+	padding-left: 20px;
+}
