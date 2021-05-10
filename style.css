@@ -493,10 +493,11 @@ h1 {
 	flex-wrap: wrap;
 	justify-content: space-between;
 
+	margin-top: 20px;
 	border: 1px solid blue ;
 }
 
-#section-activités h2{
+#section-activités h2 {
 
 	width: 100%;
 }
@@ -543,8 +544,7 @@ h1 {
 	height: 170px;
 
 	border-radius: 15px;
-	box-shadow: 0px 0px 10px 0px rgb(170 170 170);
-	
+	box-shadow: 0px 0px 10px 0px rgb(170 170 170);	
 }
 
 #container1, #container2 .colonne .small a div img { /*cadre petites cards */
@@ -578,7 +578,6 @@ h1 {
 
 	border-radius: 15px;
 	box-shadow: 0px 0px 10px 0px rgb(170 170 170);
-
 }
 
 .big img {
@@ -607,5 +606,14 @@ h1 {
 
 	border-radius: 15px;
 	box-shadow: 0px 0px 10px 0px rgb(170 170 170);
+}
 
+/*-----  Footer  -----*/
+
+.footer {
+
+	display: flex;
+	
+	margin-top: 30px;
+	background-color: #f2f2f2;
 }
