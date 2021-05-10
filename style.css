@@ -391,26 +391,25 @@ h1 {
 
 .card-right {
 
-	display: flex;
-	flex-direction: column;
-	
 	margin: 10px 0px;
-	
 }
 
 .populaires a {
 
 	display: flex;
+	padding: 5px;
+	margin-bottom: 30px;
 
 	text-decoration: none;
-
+	background-color: white;
+	border-radius: 15px;
 }
 
 .populaires a div {
 
 	display: flex;
-	
-	
+	height: 130px;
+	border:1px solid blue;
 }
 
 .populaires img {
@@ -426,7 +425,8 @@ h1 {
 .populaires a div div { /* description hôtel */
 
 	flex-direction: column;
-
+	border: 1px solid pink;
+	
 }
 
 
