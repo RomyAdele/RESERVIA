@@ -287,7 +287,7 @@ h1 {
 	width: 900px;
 	
 	margin-right: 30px;
-	padding: 30px;
+	padding: 25px;
 
 	background-color: #f2f2f2;
 	border-radius: 15px;
@@ -318,7 +318,7 @@ h1 {
 	margin: 10px; /* la marge placera afficher plus à sa place */
 
 	background-color: white;
-	border-radius: 20px;
+	border-radius: 15px;
 	
 }
 
@@ -328,17 +328,28 @@ h1 {
 	height: 110px;
 	object-fit: cover;
 
-	border-radius: 20px 20px 0 0;
+	border-radius: 15px 15px 0 0;
 }
 
 .hébergements h3 {
 
-	
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+
+	color: black;
+	font: 1rem;
 	background-color: violet;
 }
 
 .hébergements p {
 
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-bottom: 0px;
+
+	color: black;
+	font-size: 0.8rem;
 	background-color: wheat;
 }
 
@@ -346,16 +357,25 @@ h1 {
 
 	display: flex;
 
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+
+	font-size: 0.8rem;
 	color: #0065fc;
-	background-color: thistle;
+
 }
 
 .plus > a {
 
 	display: flex;
 
+	padding-left: 20px;
+	margin-top: 20px;
 	text-decoration: none;
 	color: black;
+	font-size: 1rem;
+	font-weight: bold;
 
 	border: none;
 }
@@ -386,13 +406,14 @@ h1 {
 
 .chart i {
 
+	font-size: 1.2rem;
 	background-color: yellow;
 }
 
 .card-right {
 
-	margin: 10px 0px;
-}
+	margin-top: 30px ;
+}	
 
 .populaires a {
 
@@ -464,3 +485,13 @@ h1 {
 	background-color: sandybrown;
 }
 
+/*-----  Section-activités  -----*/
+
+#section-activités {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	border: 1px solid blue ;
+}
