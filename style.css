@@ -364,12 +364,10 @@ h1 {
 
 .populaires {
 
-	display: flex;
-	flex-wrap: wrap;
 	flex:1;
 	line-height: 1;
 	
-	width: 400px;
+	width: 350px;
 	margin-left: 30px;
 	padding: 30px;
 
@@ -380,6 +378,7 @@ h1 {
 .chart {
 
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 
 	background-color: coral;
@@ -387,24 +386,47 @@ h1 {
 
 .chart i {
 
-	justify-content: flex-end;
+	background-color: yellow;
 }
 
 .card-right {
 
 	display: flex;
 	flex-direction: column;
-
-	border: 1px solid red;
+	
+	margin: 10px 0px;
+	
 }
 
+.populaires a {
 
+	display: flex;
+
+	text-decoration: none;
+
+}
+
+.populaires a div {
+
+	display: flex;
+	
+	
+}
 
 .populaires img {
 
 	width: 120px;
 	height: 130px;
 	object-fit: cover;
+
+	min-width: 120px; /* mettre m.w sinon la derniere photo sera + petite */
+	line-height: 1;
+}
+
+.populaires a div div { /* description hôtel */
+
+	flex-direction: column;
+
 }
 
 
