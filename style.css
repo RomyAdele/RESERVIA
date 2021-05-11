@@ -613,8 +613,10 @@ h1 {
 .footer {
 
 	display: flex;
+	flex-wrap: wrap;
 	
 	margin-top: 30px;
+	padding-top: 20px;
 	background-color: #f2f2f2;
 }
 
@@ -623,4 +625,30 @@ footer li a { /* couleur soulignement*/
 	display: flex;
 	text-decoration: none;
 	color: black;
+}
+
+footer ul {
+
+	flex-direction: column;
+
+	padding:0px;
+	list-style: none;
+	line-height: 2;
+
+	border: 1px solid pink;
+}
+
+.a-propos {
+
+	flex: 1;
+}
+
+.nos-hébergements {
+
+	flex: 1;
+}
+
+.assistance {
+
+	flex: 1;
 }
