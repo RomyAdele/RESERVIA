@@ -239,8 +239,7 @@ h1 {
 	display: flex;
 	align-items: center;
 
-	margin: 10px 0px 20px 0px;
-	
+	margin: 10px 0px 20px 0px;	
 }
 
 #info span {
@@ -268,7 +267,6 @@ h1 {
 
 	display: flex;
 	flex-wrap: wrap;
-
 }
 
 .hébergements {
@@ -378,7 +376,6 @@ h1 {
 	align-items: center;
 
 	padding-top: 10px;
-
 }
 
 .chart i {
@@ -394,9 +391,8 @@ h1 {
 .populaires a {
 
 	display: flex;
-	
-
 	height: 140px;
+
 	padding: 5px;
 	margin-bottom: 30px;
 
@@ -413,7 +409,6 @@ h1 {
 	object-fit: cover;
 
 	border-radius: 15px 0px 0px 15px;
-
 	min-width: 130px; /* mettre m.w sinon la derniere photo sera + petite */
 	line-height: 1;
 }
@@ -423,14 +418,10 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	
-	margin-left: 20px;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	padding-bottom: 10px;
+	margin: 0px 0px 0px 20px ;
+	padding: 0px 10px 10px 0px;
 
 	flex: 1;
-	
-	border: 1px solid pink;
 }
 
 .populaires h3 {
@@ -439,7 +430,6 @@ h1 {
 
 	font-size: 1rem;
 	color: black;
-	background-color: powderblue;
 }
 
 .populaires p {
@@ -448,7 +438,6 @@ h1 {
 
 	font-size: 0.8rem;
 	color: black;
-	background-color: plum;
 }
 
 .populaires span { /* etoile bleu */
@@ -458,7 +447,6 @@ h1 {
 
 	font-size: 0.8rem;
 	color: #0065fc;
-	background-color: sandybrown;
 }
 
 /*-----  Section-activités  -----*/
@@ -470,7 +458,6 @@ h1 {
 	justify-content: space-between;
 
 	margin-top: 20px;
-	border: 1px solid blue ;
 }
 
 #section-activités h2 {
@@ -599,7 +586,6 @@ footer {
 	min-width: 300px;
 	padding-top: 20px;
 	flex: 1;
-
 }
 
 .footer h3 {
@@ -621,8 +607,7 @@ footer {
 	
 	.logo {
 
-		flex-direction: row-reverse;
-		
+		flex-direction: row-reverse;	
 	}
 
 	nav {
@@ -636,6 +621,7 @@ footer {
         width: 50%;
         justify-content: center;
         align-items: center;
+
         border-bottom: solid 3px #F2F2F2;
     }
 
@@ -643,8 +629,6 @@ footer {
 
         width: 150px;
         height: 57px;
-        margin-bottom: 0px;
-        margin-bottom: 10px;
     }
 
     nav > a:hover{
@@ -670,8 +654,7 @@ footer {
 		justify-content: center;
 		align-items: center;
 		margin-left: -30px;
-		border-radius: 25%;
-		
+		border-radius: 25%;	
 	}
 
 	.rechercher > span {
@@ -687,14 +670,15 @@ footer {
 	.section-3 {
 
 		display: flex;
-		flex-wrap: wrap-reverse;
-		
+		flex-wrap: wrap-reverse;	
 	}
 
 	.populaires {
 
 		width: 100%;
-		margin-left: 0px;
+		margin: 0px;
+		padding: 0px;
+
 		background-color: #f2f2f2;
 		border-radius: 0px;
 	}
@@ -704,23 +688,19 @@ footer {
 		width: 100%;
 	}
 
-	.populaires a {
-
-		width: 100%;
-		margin: 10px 0px;
-	}
-
 	.hébergements {
 
 		width: 100%;
 		margin-top: 10px;
 		padding: 0px;
+
 		background-color: white;
 	}
 
 	.hébergements h2 {
 	
 		font-size: 1.2rem;
+		margin-bottom: 10px;
 	}
 
 	.hébergements img {
@@ -731,21 +711,22 @@ footer {
 	.hébergements a {
 
 		min-width: 330px;
+	}
 
+	.plus {
+
+		display: flex;
 	}
 
 	#section-activités {
 
 		width: 100%;
 		display: flex;
-	;
 	}
 
 	.container {
 
-	
 		justify-content: center;
-
 	}
 
 	.big a div {
@@ -760,7 +741,6 @@ footer {
 
 		width: 100%;
 		height: 150px;
-
 	}
 
 	.moyenne a div {
@@ -790,10 +770,40 @@ footer {
 		width: 100%;
 		height: 150px;
 	}	
-	
 
+}
 
+@media screen and (max-width: 768px) { /* Tablet*/
 
+	.section-3 {
 
+		flex-wrap: wrap-reverse;		
+	}
+
+	.hébergements {
+
+		display: flex;
+		max-width: 768px;
+		margin: 0px;
+	}
+
+	.plus{
+
+		display: flex;
+		width: 100%;
+	}
+
+	.populaires {
+
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 30px;
+	}
+
+	#section-activités{
+
+		display: flex;
+		justify-content: space-between;
+	}
 
 }
