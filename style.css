@@ -1,6 +1,7 @@
 body {
   font-family: "Raleway", sans-serif;
   margin: 0px;
+  overflow-x: hidden;
 }
 main {
   max-width: 1440px;
@@ -34,7 +35,7 @@ nav {
 }
 
 nav > a {
-  /* hébergements + ativités */
+  /* hebergements + ativites */
 
   display: flex;
   align-items: center;
@@ -134,7 +135,7 @@ h1 {
 }
 
 .filter {
-  /* filtre , icon , span . sur la même ligne pas aligné */
+  /* filtre , icon , span . sur la même ligne pas aligne */
 
   display: flex;
   flex-wrap: wrap;
@@ -177,7 +178,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute; /* mettre P.A pour que les icons puissent etre à côté de leur span */
+  position: absolute; /* mettre P.A pour que les icons puissent etre à côte de leur span */
 
   width: 25px; /* entoure l'icone avec height */
   height: 25px;
@@ -251,34 +252,34 @@ h1 {
   flex-wrap: wrap;
 }
 
-.hébergements {
+.hebergements {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between; /*space-around;*/
   flex: 1;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 40px;
 
   background-color: #f2f2f2;
   border-radius: 15px;
 }
 
-.hébergements h2 {
+.hebergements h2 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
-.hébergements img {
+.hebergements img {
   width: 100%;
   height: 120px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 
-.hébergements > a {
-  margin: 10px;
+.hebergements > a {
+  margin: 0 10px 10px 0px;
   padding: 5px;
 
   max-width: 240px;
@@ -292,23 +293,23 @@ h1 {
   text-decoration: none;
 }
 
-.hébergements div {
+.hebergements div {
   padding: 10px;
 }
 
-.hébergements h3 {
+.hebergements h3 {
   margin-top: auto;
   margin-bottom: auto;
   font-size: 1rem;
 }
 
-.hébergements p {
+.hebergements p {
   margin-top: 5px;
   margin-bottom: auto;
   font-size: 0.8rem;
 }
 
-.hébergements span {
+.hebergements span {
   display: flex;
   margin-top: 10px;
 
@@ -316,13 +317,13 @@ h1 {
   color: #0065fc;
 }
 
-.hébergements .etoilegrise {
+.hebergements .etoilegrise {
   display: flex;
   color: gainsboro;
   margin-top: 0px;
 }
 
-.hébergements > .plus > a {
+.hebergements > .plus > a {
   margin-top: 30px;
   width: 100%;
 
@@ -331,8 +332,9 @@ h1 {
   text-decoration: none;
 }
 
-.hébergements > .plus {
+.hebergements > .plus {
   width: 100%;
+  padding: 0;
 
   color: black;
   font-weight: bold;
@@ -343,12 +345,13 @@ h1 {
 
 .populaires {
   line-height: 1;
-  width: 370px;
+  width: 430px;
   margin-left: 35px;
-  padding: 0px 30px;
+  padding: 0px 40px;
 
   background-color: #f2f2f2;
   border-radius: 20px;
+  box-sizing: border-box;
 }
 
 .chart {
@@ -365,8 +368,6 @@ h1 {
 
 .card-right {
   margin-top: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .populaires a {
@@ -434,16 +435,16 @@ h1 {
   margin-top: 0px;
 }
 
-/*-----  Section-activités  -----*/
+/*-----  Section-activites  -----*/
 
-#section-activités {
+#section-activites {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-#section-activités h2 {
+#section-activites h2 {
   width: 100%;
 }
 
@@ -452,6 +453,8 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+
+  object-position: top;
 }
 
 .colonne {
@@ -483,13 +486,6 @@ h1 {
 
   border-radius: 15px;
   box-shadow: 0px 0px 10px 0px rgb(170, 170, 170);
-}
-
-#container1,
-#container2 .colonne .small a div img {
-  /*cadre petites cards */
-
-  object-position: top;
 }
 
 .moyenne img {
@@ -594,6 +590,7 @@ footer::before {
 
   .logo {
     flex-direction: row-reverse;
+    margin-left: 20px;
   }
 
   nav {
@@ -710,7 +707,7 @@ footer::before {
     margin: 0px;
   }
 
-  .hébergements {
+  .hebergements {
     width: 100%;
     margin-top: 10px;
     padding: 0px;
@@ -718,26 +715,33 @@ footer::before {
     background-color: white;
   }
 
-  .hébergements h2 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+  .hebergements h2 {
+    margin-bottom: 20px;
   }
 
-  .hébergements img {
+  .hebergements img {
     width: 100%;
   }
 
-  .hébergements a {
-    min-width: 330px;
+  .hebergements a {
+    max-width: unset;
+    margin: 0 0px 20px 0;
   }
 
-  .plus {
+  .hebergements > .plus > a {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .hebergements .plus {
     display: flex;
+    padding: 0;
   }
 
-  #section-activités {
+  #section-activites {
     width: 100%;
     display: flex;
+    margin: 0px;
   }
 
   .container {
@@ -790,7 +794,7 @@ footer::before {
     flex-wrap: wrap-reverse;
   }
 
-  .hébergements {
+  .hebergements {
     display: flex;
     max-width: 768px;
     margin: 0px;
@@ -807,7 +811,7 @@ footer::before {
     margin-bottom: 30px;
   }
 
-  #section-activités {
+  #section-activites {
     display: flex;
     width: 100%;
   }
@@ -828,7 +832,7 @@ footer::before {
     flex-wrap: wrap-reverse;
   }
 
-  .hébergements {
+  .hebergements {
     width: 100%;
     display: flex;
     /*max-width: 768px;*/
@@ -846,7 +850,7 @@ footer::before {
     margin-bottom: 30px;
   }
 
-  #section-activités {
+  #section-activites {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
